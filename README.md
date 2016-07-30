@@ -1,6 +1,10 @@
 # Tarot
 Tarot is a light-weight, card-based LESS boilerplate framework.
 
+#Current Status
+
+Tarot is currently in Alpha Status 0.1. This means that variables and syntax are subject to change and that there is very little documentation.
+
 #To-Do:
 <ul>
 <li>Add plugins for sidebar</li>
@@ -16,4 +20,4 @@ Tarot is a light-weight, card-based LESS boilerplate framework.
 </ul>
 
 #Contributors: 
-Donald Beals and Matt McCullar.
+<a href="http://github.com/dbeals/">Donald Beals</a> and <a href="http://github.com/mmccullar/">Matt McCullar</a>.
