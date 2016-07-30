@@ -3,7 +3,7 @@ Tarot is a light-weight, card-based LESS boilerplate framework.
 
 #Current Status
 
-Tarot is currently in Alpha Status 0.1. This means that variables and syntax are subject to change and that there is very little documentation.
+Tarot is currently in <b>Alpha Status 0.1</b>. This means that variables and syntax are subject to change and that there is very little documentation.
 
 #To-Do:
 <ul>
