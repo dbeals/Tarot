@@ -83,10 +83,12 @@
 	}
 }
 
-.color-group(@color, @textColor, @selectorPrefix, @prefix: ~'.') {
+.color-group(@color, @textColor, @linkColor, @selectorPrefix, @prefix: ~'.') {
 	@{prefix}@{selectorPrefix}-text { color: @textColor; }
 	.background(@color, @textColor, @selectorPrefix, @prefix);
 	.border(@color, @selectorPrefix, @prefix);
+
+	@{prefix}@{selectorPrefix}-back a { color: @linkColor; }
 }
 
 .outline(@color, @textColor, @selectorPrefix, @prefix: ~'.') {

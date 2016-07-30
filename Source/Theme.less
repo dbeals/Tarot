@@ -13,26 +13,33 @@
 
 @primaryColor: #27afc0;
 @primaryTextColor: #fff;
+@primaryLinkColor: #27afc0;
 
 @secondaryColor: #d28b4c;
 @secondaryTextColor: black;
+@secondaryLinkColor: gray;
 
 @successColor: lightgreen;
 @successTextColor: black;
+@successLinkColor: darkorange;
 
 @warningColor: yellow;
 @warningTextColor: black;
+@warningLinkColor: red;
 
-@errorColor: red;
+@errorColor: #ff6666;
 @errorTextColor: black;
+@errorLinkColor: white;
+
+@import "CustomThemeVariables.less";
 
 * {
 	border-color: @borderColor;
 }
 
 a {
-	color: @linkColor;
 	text-decoration: none;
+	color: @linkColor;
 }
 
 body {
@@ -69,11 +76,23 @@ body {
 	&.warning { border-top-color: darken(@warningColor, @colorOffset1); .three-d(@warningColor); }
 	&.error { border-top-color: darken(@errorColor, @colorOffset1); .three-d(@errorColor); }
 
+	.title {
+		display: block; 
+		text-align: center;
+	}
+
 	.three-d(@borderColor);
 
-	&.hover li:not(.header):hover {
-		background-color: lighten(@cardBackColor, @colorOffset1);
+	.back-hover(@color, @selector) {
+		&.@{selector}-back.hover li:not(.header):hover { background-color: lighten(@color, @colorOffset1); }
 	}
+
+	&.hover li:not(.header):hover { background-color: lighten(@cardBackColor, @colorOffset1); }
+	.back-hover(@primaryColor, primary);
+	.back-hover(@secondaryColor, secondary);
+	.back-hover(@successColor, success);
+	.back-hover(@warningColor, warning);
+	.back-hover(@errorColor, error);
 
 	.block {
 		background-color: darken(@cardBackColor, 5%);
@@ -107,8 +126,10 @@ body {
 	}
 }
 
-.color-group(@primaryColor, @primaryTextColor, primary);
-.color-group(@secondaryColor, @secondaryTextColor, secondary);
-.color-group(@errorColor, @errorTextColor, error);
-.color-group(@warningColor, @warningTextColor, warning);
-.color-group(@successColor, @successTextColor, success);
+.color-group(@primaryColor, @primaryTextColor, @primaryLinkColor, primary);
+.color-group(@secondaryColor, @secondaryTextColor, @secondaryLinkColor, secondary);
+.color-group(@errorColor, @errorTextColor, @errorLinkColor, error);
+.color-group(@warningColor, @warningTextColor, @warningLinkColor, warning);
+.color-group(@successColor, @successTextColor, @successLinkColor, success);
+
+@import "CustomThemeStyles.less";

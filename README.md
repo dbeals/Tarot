@@ -29,7 +29,8 @@ These are just a few notes about contributing.
 - Keep selector specificity as low as possible.
 - Do not use ID selectors - all styles should be designed to be applied to any element.
 - Use specific styles; for example, use border[-side]-width instead of border: none as border: none will mess with subsequent styles.
-- Make sure to process the LESS files down to CSS.
+- Make sure to compile the LESS files down to CSS.
+	- As a side-note, make sure to compile all other files after changes to GlobalVariables.less. Most auto-compile extensions I've used will not detect the change and force the other files to compile.
 - LESS files go in the Source folder, CSS files go in the Distribution folder.
 - All LESS files should import GlobalVariables.less.
 - Only variables and mixins (must always have parenthesis) are allowed in GlobalVariables.less. This way the contents of GlobalVariables.less does not affect the file that is importing it.
@@ -127,3 +128,8 @@ To simplify design, we have included quarters and thirds:
 *Please note that there is not a twelve-columns, four-quarters, or three-thirds; you would utilize full-width for this.*
 
 Finally, append -offset to the end of any of these to push the element to the right.
+
+# Themes
+If you just want to adjust theme colors, assign the new values in CustomThemeStyles.less; these values are import after the default values, but before the styles.
+
+If you want to add/adjust built-in theme styles, do so in CustomThemeStyles.less. These are imported after everything else.
