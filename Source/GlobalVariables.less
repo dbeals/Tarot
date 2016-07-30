@@ -26,22 +26,22 @@
 @colorOffset4: 48%;
 
 .pad-none() { padding: 0; }
-.pad-left() { padding-left: @basePadding; &.thin { padding-left: @thinPadding; } &.thick { padding-left: @thickPadding; } }
-.pad-top() { padding-top: @basePadding; &.thin { padding-top: @thinPadding; } &.thick { padding-top: @thickPadding; } }
-.pad-right() { padding-right: @basePadding; &.thin { padding-right: @thinPadding; } &.thick { padding-right: @thickPadding; } }
-.pad-bottom() { padding-bottom: @basePadding; &.thin { padding-bottom: @thinPadding; } &.thick { padding-bottom: @thickPadding; } }
-.pad-horizontal() { .pad-left; .pad-right; &.thin { padding-left: @thinPadding; padding-right: @thinPadding; } &.thick { padding-left: @thickPadding; padding-right: @thickPadding; } }
-.pad-vertical() { .pad-top; .pad-bottom; &.thin { padding-top: @thinPadding; padding-bottom: @thinPadding; } &.thick { padding-top: @thickPadding; padding-bottom: @thickPadding; } }
-.pad-all() { padding: @basePadding; &.thin { padding: @thinPadding; } &.thick { padding: @thickPadding; } }
+.pad-left() { padding-left: @basePadding; &.thin-padding { padding-left: @thinPadding; } &.thick-padding { padding-left: @thickPadding; } }
+.pad-top() { padding-top: @basePadding; &.thin-padding { padding-top: @thinPadding; } &.thick-padding { padding-top: @thickPadding; } }
+.pad-right() { padding-right: @basePadding; &.thin-padding { padding-right: @thinPadding; } &.thick-padding { padding-right: @thickPadding; } }
+.pad-bottom() { padding-bottom: @basePadding; &.thin-padding { padding-bottom: @thinPadding; } &.thick-padding { padding-bottom: @thickPadding; } }
+.pad-horizontal() { .pad-left; .pad-right; &.thin-padding { padding-left: @thinPadding; padding-right: @thinPadding; } &.thick-padding { padding-left: @thickPadding; padding-right: @thickPadding; } }
+.pad-vertical() { .pad-top; .pad-bottom; &.thin-padding { padding-top: @thinPadding; padding-bottom: @thinPadding; } &.thick-padding { padding-top: @thickPadding; padding-bottom: @thickPadding; } }
+.pad-all() { padding: @basePadding; &.thin-padding { padding: @thinPadding; } &.thick-padding { padding: @thickPadding; } }
 
 .margin-none() { margin: 0; }
-.margin-left() { margin-left: @baseMargin; &.thin { margin-left: @thinMargin; } &.thick { margin-left: @thickMargin; } }
-.margin-top() { margin-top: @baseMargin; &.thin { margin-top: @thinMargin; } &.thick { margin-top: @thickMargin; } }
-.margin-right() { margin-right: @baseMargin; &.thin { margin-right: @thinMargin; } &.thick { margin-right: @thickMargin; } }
-.margin-bottom() { margin-bottom: @baseMargin; &.thin { margin-bottom: @thinMargin; } &.thick { margin-bottom: @thickMargin; } }
-.margin-horizontal() { .margin-left; .margin-right; &.thin { margin-left: @thinMargin; margin-right: @thinMargin; } &.thick { margin-left: @thickMargin; margin-right: @thickMargin; } }
-.margin-vertical() { .margin-top; .margin-bottom; &.thin { margin-top: @thinMargin; margin-bottom: @thinMargin; } &.thick { margin-top: @thickMargin; margin-bottom: @thickMargin; } }
-.margin-all() { margin: @baseMargin; &.thin { margin: @thinMargin; } &.thick { margin: @thickMargin; } }
+.margin-left() { margin-left: @baseMargin; &.thin-margin { margin-left: @thinMargin; } &.thick-margin { margin-left: @thickMargin; } }
+.margin-top() { margin-top: @baseMargin; &.thin-margin { margin-top: @thinMargin; } &.thick-margin { margin-top: @thickMargin; } }
+.margin-right() { margin-right: @baseMargin; &.thin-margin { margin-right: @thinMargin; } &.thick-margin { margin-right: @thickMargin; } }
+.margin-bottom() { margin-bottom: @baseMargin; &.thin-margin { margin-bottom: @thinMargin; } &.thick-margin { margin-bottom: @thickMargin; } }
+.margin-horizontal() { .margin-left; .margin-right; &.thin-margin { margin-left: @thinMargin; margin-right: @thinMargin; } &.thick-margin { margin-left: @thickMargin; margin-right: @thickMargin; } }
+.margin-vertical() { .margin-top; .margin-bottom; &.thin-margin { margin-top: @thinMargin; margin-bottom: @thinMargin; } &.thick-margin { margin-top: @thickMargin; margin-bottom: @thickMargin; } }
+.margin-all() { margin: @baseMargin; &.thin-margin { margin: @thinMargin; } &.thick-margin { margin: @thickMargin; } }
 
 .background(@color, @textColor, @selectorPrefix, @prefix: ~'.') {
 	@{prefix}@{selectorPrefix}-back {
