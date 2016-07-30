@@ -69,8 +69,13 @@ body {
 	&.warning { border-top-color: @warningColor; }
 	&.error { border-top-color: @errorColor; }
 
-	&.hover li:hover {
+	&.hover li:not(.header):hover {
 		background-color: lighten(@cardBackColor, @colorOffset1);
+	}
+
+	.block {
+		background-color: darken(@cardBackColor, 5%);
+		.pad-all();
 	}
 	
 	form {

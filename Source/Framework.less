@@ -37,6 +37,8 @@ html, body {
 
 }
 
+img { max-width: 100%; max-height: 100%; }
+
 h1, h2, h3, h4, h5, h6 { margin: @baseMargin; }
 h1 { font-size: unit(@headerBaseSize + (@headerSizeIncrement * 5), rem); }
 h2 { font-size: unit(@headerBaseSize + (@headerSizeIncrement * 4), rem); }
@@ -45,7 +47,7 @@ h4 { font-size: unit(@headerBaseSize + (@headerSizeIncrement * 2), rem); }
 h5 { font-size: unit(@headerBaseSize + @headerSizeIncrement, rem); }
 h6 { font-size: unit(@headerBaseSize, rem); }
 
-p { .pad-horizontal(); }
+p { .margin-bottom(); }
 
 // Cards
 .card {
@@ -67,23 +69,32 @@ p { .pad-horizontal(); }
 
 	.header {
 		font-weight: bold;
-		padding: @basePadding;
-		.margin-none();
 	}
 
-	p {
-		padding: @basePadding;
-	}
-
-	ul {
-		padding: 0;
+	.list {
 		list-style: none;
+		.pad-none();
 	}
 
-	li {
+	.list-item {
 		border-bottom-width: 1px;
 		border-bottom-style: solid;
-		padding: 1rem;
+		padding: @basePadding;
+	}
+
+	.inline-list-item {
+		border-bottom-width: 1px;
+		border-bottom-style: solid;
+		padding: @basePadding;
+		
+		@media (min-width: @defaultBreakpoint) {
+			border-bottom-width: 0;
+		}
+	}
+
+	.block {
+		border-top-width: 1px;
+		border-top-style: solid;
 	}
 }
 
@@ -135,8 +146,8 @@ p { .pad-horizontal(); }
 // Utilities
 .pull-left { float: left; }
 .pull-right { float: right; }
-.content { padding: @basePadding @thickPadding; }
-.cell { padding: @basePadding @thickPadding; }
+.content { padding: @basePadding; }
+.cell { padding: @basePadding; }
 
 .pad-none { padding: 0; }
 .pad-left { padding-left: @basePadding; &.thin { padding-left: @thinPadding; } &.thick { padding-left: @thickPadding; } }
