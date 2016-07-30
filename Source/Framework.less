@@ -152,16 +152,6 @@ p { .margin-bottom(); }
 	}
 }
 
-// Main-body
-.main-body {
-	display: block;
-	width: 100%;
-
-	@media (min-width: @defaultBreakpoint) {
-		display: inline-block;
-	}
-}
-
 // Media
 .circle-image { border-radius: 50%; }
 .rounded-image { border-radius: 25%; }
@@ -172,7 +162,7 @@ p { .margin-bottom(); }
 	border-radius: @radius;
 
 	line-height: 0.75rem;
-	font-size: 0.75rem;
+	.small-text;
 	padding: 0.25rem 0.4rem;
 	white-space: nowrap;
 }
@@ -184,7 +174,7 @@ p { .margin-bottom(); }
 .pull-left { float: left; }
 .pull-right { float: right; }
 .content { padding: @basePadding; }
-.cell { padding: @basePadding; }
+.cell { padding: @thickPadding; }
 .square { border-radius: 0; }
 .rounded { border-radius: 0.25em; }
 
