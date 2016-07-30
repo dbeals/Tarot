@@ -1,0 +1,95 @@
+// out: ../Distribution/Theme.css
+@import "GlobalVariables.less";
+
+@mainColor: #282b35;
+@borderColor: #343845;
+@lightTextColor: silver;
+@mainTextColor: silver;
+
+@cardBackColor: #1d1f26;
+@cardTextColor: silver;
+
+@primaryColor: #27afc0;
+@primaryTextColor: #fff;
+
+@secondaryColor: #d28b4c;
+@secondaryTextColor: black;
+
+@successColor: lightgreen;
+@successTextColor: black;
+
+@warningColor: yellow;
+@warningTextColor: black;
+
+@errorColor: red;
+@errorTextColor: black;
+
+* {
+	border-color: @borderColor;
+}
+
+body {
+	color: @mainTextColor;
+}
+
+.nav-bar {
+	@media (min-width: @mediumBreakpoint) {
+		border-right-color: @borderColor;
+	}
+
+	.card {
+		box-shadow: none !important;
+	}
+}
+
+.main-body {
+	background-color: @mainColor;
+}
+
+.card {
+	background-color: @cardBackColor;
+	border-color: @borderColor;
+	color: @cardTextColor;
+
+	&.primary { border-top-color: @primaryColor; }	
+	&.secondary { border-top-color: @secondaryColor; }
+	&.success { border-top-color: @successColor; }	
+	&.warning { border-top-color: @warningColor; }
+	&.error { border-top-color: @errorColor; }
+
+	&.hover li:hover {
+		background-color: lighten(@cardBackColor, @colorOffset1);
+	}
+	
+	form {
+		button, input[type=checkbox] + label {
+			.button-states(@primaryColor, primary);
+			.button-states(@secondaryColor, secondary);
+			.button-states(@successColor, success);
+			.button-states(@warningColor, warning);
+			.button-states(@errorColor, error);
+		}
+
+		input[type=checkbox] + label {
+			&:before {
+				background-color: @primaryColor;
+				border-color: @borderColor;
+				border-radius: .25rem;
+				color: @primaryTextColor;
+			}
+
+			&:after {
+				background-color: @secondaryColor;
+				border-color: @borderColor;
+				border-radius: .25rem;
+				color: @secondaryTextColor;
+			}
+		}
+	}
+}
+
+.color-group (@primaryColor, @primaryTextColor, primary);
+.color-group (@secondaryColor, @secondaryTextColor, secondary);
+.color-group (@errorColor, @errorTextColor, error);
+.color-group (@warningColor, @warningTextColor, warning);
+.color-group (@successColor, @successTextColor, success);

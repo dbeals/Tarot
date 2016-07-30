@@ -1,0 +1,105 @@
+// out: ../Distribution/Grid.css
+@import "GlobalVariables.less";
+
+.row {
+	display: block;
+
+	@media (min-width: @defaultBreakpoint) {
+		display: flex;
+	}
+}
+
+.grid-item-inline(@width, @breakpoint: @defaultBreakpoint) {
+	@media (min-width: @breakpoint) {
+		display: inline-block;
+		width: @width;
+	}
+}
+
+.grid-item() {
+	display: block;
+}
+
+.one-quarter {
+	.grid-item();
+	.grid-item-inline(25%);
+}
+
+.two-quarters {
+	.grid-item();
+	.grid-item-inline(50%);
+}
+
+.three-quarters {
+	.grid-item();
+	.grid-item-inline(75%);
+}
+
+.one-third {
+	.grid-item();
+	.grid-item-inline(33.33333333%);
+}
+
+.two-thirds {
+	.grid-item();
+	.grid-item-inline(66.66666666%);
+}
+
+.one-column {
+	.grid-item();
+	.grid-item-inline(8.33333333333%);
+}
+
+.two-columns {
+	.grid-item();
+	.grid-item-inline(16.66666666666%);
+}
+
+.three-columns {
+	.grid-item();
+	.grid-item-inline(24.99999999999%);
+}
+
+.four-columns {
+	.grid-item();
+	.grid-item-inline(33.33333333332%);
+}
+
+.five-columns {
+	.grid-item();
+	.grid-item-inline(41.66666666665%);
+}
+
+.six-columns {
+	.grid-item();
+	.grid-item-inline(49.99999999998%);
+}
+
+.seven-columns {
+	.grid-item();
+	.grid-item-inline(58.33333333331%);
+}
+
+.eight-columns {
+	.grid-item();
+	.grid-item-inline(66.66666666664%);
+}
+
+.nine-columns {
+	.grid-item();
+	.grid-item-inline(74.99999999997%);
+}
+
+.ten-columns {
+	.grid-item();
+	.grid-item-inline(83.3333333333%);
+}
+
+.eleven-columns {
+	.grid-item();
+	.grid-item-inline(91.66666666663%);
+}
+
+.full {
+	.grid-item();
+}

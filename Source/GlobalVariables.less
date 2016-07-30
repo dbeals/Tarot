@@ -1,0 +1,112 @@
+﻿@smallBreakpoint: 480px;
+@mediumBreakpoint: 720px;
+@largeBreakpoint: 980px;
+@extraLargeBreakpoint: 1140px;
+
+@defaultBreakpoint: @largeBreakpoint;
+
+@baseFontSize: 16px;
+@baseFontFamily: sans-serif;
+@headerBaseSize: 1;
+@headerSizeIncrement: 0.25;
+
+@sideBarWidth: 260px;
+
+@basePadding: 1rem;
+@thickPadding: 2rem;
+
+@baseMargin: 1rem;
+@thickMargin: 2rem;
+
+@colorOffset1: 12%;
+@colorOffset2: 24%;
+@colorOffset3: 36%;
+@colorOffset4: 48%;
+
+.pad-none() { padding: 0; }
+.pad-left() { padding-left: @basePadding; &.thick { padding-left: @thickPadding; } }
+.pad-top() { padding-top: @basePadding; &.thick { padding-top: @thickPadding; } }
+.pad-right() { padding-right: @basePadding; &.thick { padding-right: @thickPadding; } }
+.pad-bottom() { padding-bottom: @basePadding; &.thick { padding-bottom: @thickPadding; } }
+.pad-horizontal() { .pad-left; .pad-right; &.thick { padding-left: @thickPadding; padding-right: @thickPadding; } }
+.pad-vertical() { .pad-top; .pad-bottom; &.thick { padding-top: @thickPadding; padding-bottom: @thickPadding; } }
+.pad-all() { padding: @basePadding; &.thick { padding: @thickPadding; } }
+
+.margin-none() { margin: 0; }
+.margin-left() { margin-left: @baseMargin; &.thick { margin-left: @thickMargin; } }
+.margin-top() { margin-top: @baseMargin; &.thick { margin-top: @thickMargin; } }
+.margin-right() { margin-right: @baseMargin; &.thick { margin-right: @thickMargin; } }
+.margin-bottom() { margin-bottom: @baseMargin; &.thick { margin-bottom: @thickMargin; } }
+.margin-horizontal() { .margin-left; .margin-right; &.thick { margin-left: @thickMargin; margin-right: @thickMargin; } }
+.margin-vertical() { .margin-top; .margin-bottom; &.thick { margin-top: @thickMargin; margin-bottom: @thickMargin; } }
+.margin-all() { margin: @baseMargin; &.thick { margin: @thickMargin; } }
+
+.background(@color, @textColor, @selectorPrefix, @prefix: ~'.') {
+	@{prefix}@{selectorPrefix}-back {
+		background-color: @color;
+		color: @textColor;
+		
+		&.dark-back { background-color: darken(@color, @colorOffset1, relative); }
+		&.darker-back { background-color: darken(@color, @colorOffset2, relative); }
+		&.darkest-back { background-color: darken(@color, @colorOffset3, relative); }
+		&.light-back { background-color: lighten(@color, @colorOffset1, relative); }
+		&.lighter-back { background-color: lighten(@color, @colorOffset2, relative); }
+		&.lightest-back { background-color: lighten(@color, @colorOffset3, relative); }
+	}
+}
+
+.border(@color, @selectorPrefix, @prefix: ~'.') {
+	@{prefix}@{selectorPrefix}-border {
+		border-color: darken(@color, @colorOffset1);
+		
+		&.dark-border { border-color: darken(@color, @colorOffset2, relative); }
+		&.darker-border { border-color: darken(@color, @colorOffset3, relative); }
+		&.darkest-border { border-color: darken(@color, @colorOffset4, relative); }
+		&.light-border { border-color: lighten(@color, @colorOffset2, relative); }
+		&.lighter-border { border-color: lighten(@color, @colorOffset3, relative); }
+		&.lightest-border { border-color: lighten(@color, @colorOffset4, relative); }
+	}
+}
+
+.text-color(@color, @selectorPrefix, @prefix: ~'.') {
+	@{prefix}@{selectorPrefix}-text {
+		color: @color;
+		
+		&.dark-text { color: darken(@color, @colorOffset1, relative); }
+		&.darker-text { color: darken(@color, @colorOffset2, relative); }
+		&.darkest-text { color: darken(@color, @colorOffset3, relative); }
+		&.light-text { color: lighten(@color, @colorOffset1, relative); }
+		&.lighter-text { color: lighten(@color, @colorOffset2, relative); }
+		&.lightest-text { color: lighten(@color, @colorOffset3, relative); }
+	}
+}
+
+.color-group(@color, @textColor, @selectorPrefix, @prefix: ~'.') {
+	@{prefix}@{selectorPrefix}-text { color: @textColor; }
+	.background(@color, @textColor, @selectorPrefix, @prefix);
+	.border(@color, @selectorPrefix, @prefix);
+}
+
+.outline(@color, @textColor, @selectorPrefix, @prefix: ~'.') {
+	&@{prefix}@{selectorPrefix} {
+		background-color: @color;
+		color: @textColor;
+		&.outline {
+			background-color: transparent;
+			border-color: @color;
+			color: @color;
+
+			&:hover {
+				background-color: @color;
+				color: @textColor;
+			}
+		}
+	}
+}
+
+.button-states(@color, @colorGroup, @prefix: ~'.') {
+	&@{prefix}@{colorGroup}-back:hover { background-color: lighten(@color, @colorOffset1); }
+	&@{prefix}@{colorGroup}-border:hover { border-color: lighten(@color, @colorOffset1); }
+	&@{prefix}@{colorGroup}-back:active { background-color: darken(@color, @colorOffset1); }
+	&@{prefix}@{colorGroup}-border:active { border-color: darken(@color, @colorOffset1); }
+}
