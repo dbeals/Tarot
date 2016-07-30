@@ -1,7 +1,7 @@
 # Tarot
 Tarot is a light-weight, card-based LESS boilerplate framework.
 
-To-Do:
+#To-Do:
 
 Add plugins for sidebar
 Add more colors for initial theme
@@ -14,4 +14,5 @@ Add swiping left and right on cards
 Add swiping up and down on cards
 Add turning cards
 
-Contributors: Donald Beals and Matt McCullar.
+#Contributors: 
+Donald Beals and Matt McCullar.
