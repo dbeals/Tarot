@@ -2,17 +2,18 @@
 Tarot is a light-weight, card-based LESS boilerplate framework.
 
 #To-Do:
-
-Add plugins for sidebar<br>
-Add more colors for initial theme<br>
-Add different button colors<br>
-Add different button sizes<br>
-Add more click button effects<br>
-Add card close effects<br>
-Add card switching effects<br>
-Add swiping left and right on cards<br>
-Add swiping up and down on cards<br>
-Add turning cards
+<ul>
+<li>Add plugins for sidebar</li>
+<li>Add more colors for initial theme</li>
+<li>Add different button colors</li>
+<li>Add different button sizes</li>
+<li>Add more click button effects</li>
+<li>Add card close effects</li>
+<li>Add card switching effects</li>
+<li>Add swiping left and right on cards</li>
+<li>Add swiping up and down on cards</li>
+<li>Add turning cards</li>
+</ul>
 
 #Contributors: 
 Donald Beals and Matt McCullar.
