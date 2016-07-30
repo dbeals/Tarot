@@ -18,6 +18,7 @@
 
 .grid-item() {
 	display: block;
+	width: 100%;
 }
 
 .grid-offset-inline(@width, @breakpoint: @defaultBreakpoint) {
@@ -170,6 +171,14 @@
 	.grid-offset-inline(91.66666666663%);
 }
 
-.full {
+.full-width {
 	.grid-item();
+}
+
+.fill-width {
+	display: block;
+
+	@media (min-width: @defaultBreakpoint) {
+		display: inline-block;
+	}
 }
