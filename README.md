@@ -3,7 +3,7 @@ Tarot is a light-weight, card-based LESS boilerplate framework.
 
 #Current Status
 
-Tarot is currently in <b>Alpha Status 0.1</b>. This means that variables and syntax are subject to change and that there is very little documentation.
+Tarot is currently in <b>Alpha Status 0.1.</b> This means that variables and syntax are subject to change and that there is very little documentation.
 
 #To-Do:
 <ul>
@@ -17,6 +17,9 @@ Tarot is currently in <b>Alpha Status 0.1</b>. This means that variables and syn
 <li>Add swiping left and right on cards</li>
 <li>Add swiping up and down on cards</li>
 <li>Add turning cards</li>
+<li>Add Wrapper class</li>
+<li>Add Vertical positioning in cards.</li>
+<li>Optional: Come up with fun, quirky syntax to match theme of framework.</li>
 </ul>
 
 #Contributors: 
