@@ -94,6 +94,7 @@ You can create a card by simply assigning the class "card" to any div. This will
 
 - **no-accent**: removes the accent (changes the 3px border at the top to a 1px border.)
 - **hover** *(theme only)*: list-items will have a hover affect applied.
+- **three-d** *(theme only): gives the card a 3D appearance.
 
 ## Typography
 

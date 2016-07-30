@@ -112,3 +112,17 @@
 	&@{prefix}@{colorGroup}-back:active { background-color: darken(@color, @colorOffset1); }
 	&@{prefix}@{colorGroup}-border:active { border-color: darken(@color, @colorOffset1); }
 }
+
+.three-d(@color) {
+	&.three-d { box-shadow: inset 0 0 0 darken(@color, @colorOffset3), 0 5px 0 0 darken(@color, @colorOffset3), 0 10px 5px darken(@mainColor, @colorOffset3); }
+}
+
+.flip(@time, @degs: 180deg, @backfaceVisibility: hidden) {
+	transition: transform @time;
+	transform: rotateY(@degs);
+	backface-visibility: @backfaceVisibility;
+}
+
+.no-flip(@backfaceVisibility: hidden) {
+	.flip(.5s, 0deg, @backfaceVisibility);
+}
