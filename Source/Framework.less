@@ -174,8 +174,18 @@ p { .margin-bottom(); }
 .pill { .tag(1rem); }
 
 // Utilities
-.pull-left { float: left; }
-.pull-right { float: right; }
+.pull-left {
+	float: none;
+
+	@media (min-width: @defaultBreakpoint) { float: left; }
+}
+
+.pull-right {
+	float: none;
+
+	@media (min-width: @defaultBreakpoint) { float: right; }
+}
+
 .content { padding: @basePadding; }
 .cell { padding: @thickPadding; }
 .square { border-radius: 0; }
