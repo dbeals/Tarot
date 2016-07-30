@@ -59,14 +59,9 @@ p { .margin-bottom(); }
 	border-radius: .25rem;
 	margin: 1rem;
 	color: black;
-	.large-text;
 
 	&.no-accent {
 		border-top-width: 1px;
-	}
-
-	&.square {
-		border-radius: 0;
 	}
 
 	.header {
@@ -147,11 +142,11 @@ p { .margin-bottom(); }
 
 // Inline list
 .inline {
-	li {
-		display: block;
-
-		@media (min-width: @defaultBreakpoint) {
-			display: inline-flex;
+	display: block;
+	
+	@media (min-width: @defaultBreakpoint) {
+		display: inline-flex;
+		.list-item {
 			border-bottom-width: 0;
 		}
 	}
@@ -190,6 +185,8 @@ p { .margin-bottom(); }
 .pull-right { float: right; }
 .content { padding: @basePadding; }
 .cell { padding: @basePadding; }
+.square { border-radius: 0; }
+.rounded { border-radius: 0.25em; }
 
 .pad-none { padding: 0; }
 .pad-left { padding-left: @basePadding; &.thin { padding-left: @thinPadding; } &.thick { padding-left: @thickPadding; } }
