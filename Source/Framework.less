@@ -104,6 +104,47 @@ p { .margin-bottom(); }
 	}
 }
 
+// Toasts
+.toast {
+	position: relative;
+
+	&.top-left {
+		top: 0;
+		left: 0;
+	}
+
+	&.top-right {
+		top: 0;
+		right: 0;
+	}
+
+	&.full-top {
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+
+	&.bottom-left {
+		bottom: 0;
+		left: 0;
+	}
+
+	&.bottom-right {
+		bottom: 0;
+		right: 0;
+	}
+
+	&.full-bottom {
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+
+	@media (min-width: @defaultBreakpoint) {
+		position: absolute;
+	}
+}
+
 // Inline list
 .inline {
 	li {
