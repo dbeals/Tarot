@@ -76,11 +76,6 @@ body {
 	&.warning { border-top-color: darken(@warningColor, @colorOffset1); .three-d(@warningColor); }
 	&.error { border-top-color: darken(@errorColor, @colorOffset1); .three-d(@errorColor); }
 
-	.title {
-		display: block; 
-		text-align: center;
-	}
-
 	.three-d(@borderColor);
 
 	.back-hover(@color, @selector) {
@@ -96,7 +91,6 @@ body {
 
 	.block {
 		background-color: darken(@cardBackColor, 5%);
-		.pad-all();
 	}
 	
 	form {
