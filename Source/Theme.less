@@ -6,6 +6,8 @@
 @lightTextColor: silver;
 @mainTextColor: silver;
 
+@linkColor: #27afc0;
+
 @cardBackColor: #1d1f26;
 @cardTextColor: silver;
 
@@ -28,7 +30,13 @@
 	border-color: @borderColor;
 }
 
+a {
+	color: @linkColor;
+	text-decoration: none;
+}
+
 body {
+	background-color: @mainColor;
 	color: @mainTextColor;
 }
 
@@ -42,8 +50,12 @@ body {
 	}
 }
 
-.main-body {
-	background-color: @mainColor;
+.top-bar {
+	li {
+		a:hover {
+			background-color: lighten(@cardBackColor, @colorOffset1);
+		}
+	}
 }
 
 .card {
@@ -88,8 +100,8 @@ body {
 	}
 }
 
-.color-group (@primaryColor, @primaryTextColor, primary);
-.color-group (@secondaryColor, @secondaryTextColor, secondary);
-.color-group (@errorColor, @errorTextColor, error);
-.color-group (@warningColor, @warningTextColor, warning);
-.color-group (@successColor, @successTextColor, success);
+.color-group(@primaryColor, @primaryTextColor, primary);
+.color-group(@secondaryColor, @secondaryTextColor, secondary);
+.color-group(@errorColor, @errorTextColor, error);
+.color-group(@warningColor, @warningTextColor, warning);
+.color-group(@successColor, @successTextColor, success);

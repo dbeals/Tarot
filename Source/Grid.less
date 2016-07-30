@@ -20,9 +20,19 @@
 	display: block;
 }
 
+.grid-offset-inline(@width, @breakpoint: @defaultBreakpoint) {
+	@media (min-width: @breakpoint) {
+		margin-left: @width;
+	}
+}
+
 .one-quarter {
 	.grid-item();
 	.grid-item-inline(25%);
+}
+
+.one-quarter-offset {
+	.grid-offset-inline(25%);
 }
 
 .two-quarters {
@@ -30,9 +40,17 @@
 	.grid-item-inline(50%);
 }
 
+.two-quarters-offset {
+	.grid-offset-inline(50%);
+}
+
 .three-quarters {
 	.grid-item();
 	.grid-item-inline(75%);
+}
+
+.three-quarters-offset {
+	.grid-offset-inline(75%);
 }
 
 .one-third {
@@ -40,9 +58,17 @@
 	.grid-item-inline(33.33333333%);
 }
 
+.one-third-offset {
+	.grid-offset-inline(33.33333333%);
+}
+
 .two-thirds {
 	.grid-item();
 	.grid-item-inline(66.66666666%);
+}
+
+.two-thirds-offset {
+	.grid-offset-inline(66.66666666%);
 }
 
 .one-column {
@@ -50,9 +76,17 @@
 	.grid-item-inline(8.33333333333%);
 }
 
+.one-column-offset {
+	.grid-offset-inline(8.33333333333%);
+}
+
 .two-columns {
 	.grid-item();
 	.grid-item-inline(16.66666666666%);
+}
+
+.two-columns-offset {
+	.grid-offset-inline(16.66666666666%);
 }
 
 .three-columns {
@@ -60,9 +94,17 @@
 	.grid-item-inline(24.99999999999%);
 }
 
+.three-columns-offset {
+	.grid-offset-inline(24.99999999999%);
+}
+
 .four-columns {
 	.grid-item();
 	.grid-item-inline(33.33333333332%);
+}
+
+.four-columns-offset {
+	.grid-offset-inline(33.33333333332%);
 }
 
 .five-columns {
@@ -70,9 +112,17 @@
 	.grid-item-inline(41.66666666665%);
 }
 
+.five-columns-offset {
+	.grid-offset-inline(41.66666666665%);
+}
+
 .six-columns {
 	.grid-item();
 	.grid-item-inline(49.99999999998%);
+}
+
+.six-columns-offset {
+	.grid-offset-inline(49.99999999998%);
 }
 
 .seven-columns {
@@ -80,9 +130,17 @@
 	.grid-item-inline(58.33333333331%);
 }
 
+.seven-columns-offset {
+	.grid-offset-inline(58.33333333331%);
+}
+
 .eight-columns {
 	.grid-item();
 	.grid-item-inline(66.66666666664%);
+}
+
+.eight-columns-offset {
+	.grid-offset-inline(66.66666666664%);
 }
 
 .nine-columns {
@@ -90,14 +148,26 @@
 	.grid-item-inline(74.99999999997%);
 }
 
+.nine-columns-offset {
+	.grid-offset-inline(74.99999999997%);
+}
+
 .ten-columns {
 	.grid-item();
 	.grid-item-inline(83.3333333333%);
 }
 
+.ten-columns-offset {
+	.grid-offset-inline(83.3333333333%);
+}
+
 .eleven-columns {
 	.grid-item();
 	.grid-item-inline(91.66666666663%);
+}
+
+.eleven-columns-offset {
+	.grid-offset-inline(91.66666666663%);
 }
 
 .full {

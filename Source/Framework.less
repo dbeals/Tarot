@@ -84,45 +84,18 @@ p { .pad-horizontal(); }
 		border-bottom-width: 1px;
 		border-bottom-style: solid;
 		padding: 1rem;
-
-		&:first-child {
-			border-top-width: 1px;
-			border-top-style: solid;
-		}
-
-		&:last-child {
-			border-bottom: none;
-		}
 	}
 }
 
-// Nav-bar
-.nav-bar {
-	display: block;
-
+// Inline list
+.inline {
 	li {
-		display: flex;
-	}
+		display: block;
 
-	.card {
-		margin: 0;
-		border-radius: 0;
-		border-left: none;
-		border-right: none;
-		border-top: 1px;
-
-		.collapse-switch {
-			cursor: pointer;
+		@media (min-width: @defaultBreakpoint) {
+			display: inline-flex;
+			border-bottom-width: 0;
 		}
-	}
-	
-	@media (min-width: @mediumBreakpoint) {
-		display: inline-block;
-		left: 0;
-		position: absolute;
-		top: 0;
-		width: @sideBarWidth;
-		border-right: 1px solid;
 	}
 }
 
@@ -131,21 +104,14 @@ p { .pad-horizontal(); }
 	display: block;
 	width: 100%;
 
-	@media (min-width: @mediumBreakpoint) {
+	@media (min-width: @defaultBreakpoint) {
 		display: inline-block;
-		padding-left: @sideBarWidth;
-		width: 100%;
 	}
 }
 
 // Media
 .circle-image { border-radius: 50%; }
 .rounded-image { border-radius: 25%; }
-.avatar {
-	max-width: 128px;
-	max-height: 128px;
-
-}
 
 // Badge
 .tag(@radius) {
@@ -173,22 +139,22 @@ p { .pad-horizontal(); }
 .cell { padding: @basePadding @thickPadding; }
 
 .pad-none { padding: 0; }
-.pad-left { padding-left: @basePadding; &.thick { padding-left: @thickPadding; } }
-.pad-top { padding-top: @basePadding; &.thick { padding-top: @thickPadding; } }
-.pad-right { padding-right: @basePadding; &.thick { padding-right: @thickPadding; } }
-.pad-bottom { padding-bottom: @basePadding; &.thick { padding-bottom: @thickPadding; } }
-.pad-horizontal { .pad-left; .pad-right; &.thick { padding-left: @thickPadding; padding-right: @thickPadding; } }
-.pad-vertical { .pad-top; .pad-bottom; &.thick { padding-top: @thickPadding; padding-bottom: @thickPadding; } }
-.pad-all { padding: @basePadding; &.thick { padding: @thickPadding; } }
+.pad-left { padding-left: @basePadding; &.thin { padding-left: @thinPadding; } &.thick { padding-left: @thickPadding; } }
+.pad-top { padding-top: @basePadding; &.thin { padding-top: @thinPadding; } &.thick { padding-top: @thickPadding; } }
+.pad-right { padding-right: @basePadding; &.thin { padding-right: @thinPadding; } &.thick { padding-right: @thickPadding; } }
+.pad-bottom { padding-bottom: @basePadding; &.thin { padding-bottom: @thinPadding; } &.thick { padding-bottom: @thickPadding; } }
+.pad-horizontal { .pad-left; .pad-right; &.thin { padding-left: @thinPadding; padding-right: @thinPadding; } &.thick { padding-left: @thickPadding; padding-right: @thickPadding; } }
+.pad-vertical { .pad-top; .pad-bottom; &.thin { padding-top: @thinPadding; padding-bottom: @thinPadding; } &.thick { padding-top: @thickPadding; padding-bottom: @thickPadding; } }
+.pad-all { padding: @basePadding; &.thin { padding: @thinPadding; } &.thick { padding: @thickPadding; } }
 
 .margin-none { margin: 0; }
-.margin-left { margin-left: @baseMargin; &.thick { margin-left: @thickMargin; } }
-.margin-top { margin-top: @baseMargin; &.thick { margin-top: @thickMargin; } }
-.margin-right { margin-right: @baseMargin; &.thick { margin-right: @thickMargin; } }
-.margin-bottom { margin-bottom: @baseMargin; &.thick { margin-bottom: @thickMargin; } }
-.margin-horizontal { .margin-left; .margin-right; &.thick { margin-left: @thickMargin; margin-right: @thickMargin; } }
-.margin-vertical { .margin-top; .margin-bottom; &.thick { margin-top: @thickMargin; margin-bottom: @thickMargin; } }
-.margin-all { margin: @baseMargin; &.thick { margin: @thickMargin; } }
+.margin-left { margin-left: @baseMargin; &.thin { margin-left: @thinMargin; } &.thick { margin-left: @thickMargin; } }
+.margin-top { margin-top: @baseMargin; &.thin { margin-top: @thinMargin; } &.thick { margin-top: @thickMargin; } }
+.margin-right { margin-right: @baseMargin; &.thin { margin-right: @thinMargin; } &.thick { margin-right: @thickMargin; } }
+.margin-bottom { margin-bottom: @baseMargin; &.thin { margin-bottom: @thinMargin; } &.thick { margin-bottom: @thickMargin; } }
+.margin-horizontal { .margin-left; .margin-right; &.thin { margin-left: @thinMargin; margin-right: @thinMargin; } &.thick { margin-left: @thickMargin; margin-right: @thickMargin; } }
+.margin-vertical { .margin-top; .margin-bottom; &.thin { margin-top: @thinMargin; margin-bottom: @thinMargin; } &.thick { margin-top: @thickMargin; margin-bottom: @thickMargin; } }
+.margin-all { margin: @baseMargin; &.thin { margin: @thinMargin; } &.thick { margin: @thickMargin; } }
 
 // Show/Hide
 .hide-on(@breakpoint) { @media (min-width: @breakpoint) { display: none; } }
