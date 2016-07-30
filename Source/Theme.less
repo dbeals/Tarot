@@ -63,11 +63,11 @@ body {
 	border-color: @borderColor;
 	color: @cardTextColor;
 
-	&.primary { border-top-color: @primaryColor; }	
-	&.secondary { border-top-color: @secondaryColor; }
-	&.success { border-top-color: @successColor; }	
-	&.warning { border-top-color: @warningColor; }
-	&.error { border-top-color: @errorColor; }
+	&.primary { border-top-color: darken(@primaryColor, @colorOffset1); }	
+	&.secondary { border-top-color: darken(@secondaryColor, @colorOffset1); }
+	&.success { border-top-color: darken(@successColor, @colorOffset1); }	
+	&.warning { border-top-color: darken(@warningColor, @colorOffset1); }
+	&.error { border-top-color: darken(@errorColor, @colorOffset1); }
 
 	&.hover li:not(.header):hover {
 		background-color: lighten(@cardBackColor, @colorOffset1);
