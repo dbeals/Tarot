@@ -86,6 +86,11 @@ p { .margin-bottom(); }
 		display: flex;
 	}
 
+	.list li:first-child {
+		border-top-width: 1px;
+		border-top-style: solid;
+	}
+
 	.list:last-child li:last-child {
 		border-bottom-width: 0;
 	}
@@ -107,8 +112,12 @@ p { .margin-bottom(); }
 }
 
 // Toasts
-.toast {
+.toast-container {
 	position: relative;
+}
+
+.toast {
+	position: static;
 
 	&.top-left {
 		top: 0;
@@ -188,8 +197,6 @@ p { .margin-bottom(); }
 	@media (min-width: @defaultBreakpoint) { float: right; }
 }
 
-.content { padding: @basePadding; }
-.cell { padding: @thickPadding; }
 .square { border-radius: 0; }
 .rounded { border-radius: 0.25em; }
 

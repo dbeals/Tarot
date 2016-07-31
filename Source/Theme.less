@@ -94,7 +94,16 @@ body {
 	}
 	
 	form {
-		button, input[type=checkbox] + label {
+		input:not([type=button]), select {
+			background-color: @cardBackColor;
+			color: @cardTextColor;
+			border-left-width: 0;
+			border-top-width: 0;
+			border-right-width: 0;
+			border-bottom-width: 1px;
+		}
+
+		button, input[type=button], .flipcheck + label {
 			.button-states(@primaryColor, primary);
 			.button-states(@secondaryColor, secondary);
 			.button-states(@successColor, success);
@@ -102,10 +111,9 @@ body {
 			.button-states(@errorColor, error);
 		}
 
-		input[type=checkbox] + label {
+		.flipcheck + label {
 			&:before {
 				background-color: @primaryColor;
-				border-color: @borderColor;
 				border-radius: .25rem;
 				color: @primaryTextColor;
 			}
@@ -118,6 +126,10 @@ body {
 			}
 		}
 	}
+}
+
+.form-group {
+	margin: @baseMargin;
 }
 
 .color-group(@primaryColor, @primaryTextColor, @primaryLinkColor, primary);
