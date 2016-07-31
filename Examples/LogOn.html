@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html>
+	<head>
+		<!-- Standard tags -->
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Tarot LogOn Example</title>
+		
+		<!-- Required stylesheet to use Tarot's grid. -->
+		<link rel="stylesheet" type="text/css" href="../Distribution/Grid.css" />
+
+		<!-- Required stylesheet to use Tarot's main elements. -->
+		<link rel="stylesheet" type="text/css" href="../Distribution/Framework.css" />
+
+		<!-- Required stylesheet to use Tarot's forms. -->
+		<link rel="stylesheet" type="text/css" href="../Distribution/Forms.css" />
+
+		<!-- Required stylesheet to use Tarot's theme. -->
+		<link rel="stylesheet" type="text/css" href="../Distribution/Theme.css" />
+	</head>
+
+	<body>
+		<div class="main-body">
+		<!--two-quarters-width and one-quarter-width-offset are both part of the Tarot built in Grid. -->
+			<div class="two-quarters-width one-quarter-width-offset">
+				<div class="card hover primary">
+					<form method="" action="">
+						<h4 class="title text-center">Log On To Tarot</h4>
+						<div class="card success success-back pad-all text-center strong">You have been successfully logged out.</div>
+						<div class="card error error-back pad-all text-center strong">Username / password combination is invalid.</div>
+						<div class="form-group">
+							<label for="logon-username">Username: </label>
+							<input type="text" name="logon-username" placeholder="Enter your username..." />
+						</div>
+						<div class="form-group">
+							<label for="logon-password">Password: </label>
+							<input type="password" name="logon-password" placeholder="Enter your password..." />
+						</div>
+						<div class="form-group"><input class="flipcheck" type="checkbox" id="logon-remember" name="logon-remember"><label for="logon-remember" data-unchecked="Don't Remember Me" data-checked="Remember Me" >Remember Me</label></input></div>
+						<div class="form-group"><button class="primary-back" value="Log On">Log On</button></div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

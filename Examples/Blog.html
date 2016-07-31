@@ -6,6 +6,7 @@
 		<meta charset="utf-8">
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Tarot Blog Example</title>
 		
 		<!-- Required stylesheet to use Tarot's grid. -->
 		<link rel="stylesheet" type="text/css" href="../Distribution/Grid.css" />
@@ -47,10 +48,17 @@
 					</ul>
 				</div>
 				<div class="card primary">
+					<form>
+						<h6 class="title text-center">Search</h6>
+						<div class="form-group"><input type="text" name="search-entry" placeholder="Search site..." /></div>
+						<div class="form-group"><input type="button" name="search-submit" value="Search" /></div>
+					</form>
+				</div>
+				<div class="card primary">
+					<h6 class="title text-center">Blog Posts</h6>
 					<ul class="list">
-						<li class="list-item header text-center">Blog Posts</li>
 						<li class="list-item"><a class="ellipsis" href="#post-1">Tarot Framework - Blog Post #1</a>&nbsp;<div class="pill primary-back">3 Comments</div></li>
-						<li class="list-item"><a class="ellipsis" href="#post-2">*Insert Clickbait Title Here*</a>&nbsp;<div class="pill primary-back">9000 Comments</div>&nbsp;<div class="pill secondary-back">1 Ping-back</div></li>
+						<li class="list-item"><a class="ellipsis" href="#post-2">*Insert Clickbait Title Here*</a>&nbsp;<div class="pill primary-back">9000 Comments</div></li>
 					</ul>
 				</div>
 			</div>
@@ -67,8 +75,7 @@
 						</ul>
 					</div>
 				</div>
-			</div>
-			<div class="two-quarters-width one-quarter-width-offset">
+				
 				<div id="post-2" class="card hover primary">
 					<h3 class="title text-left margin-none margin-left margin-top margin-right">*Insert Clickbait Title Here*</h3>
 					<h6 class="title text-left margin-none margin-left margin-bottom margin-right emphasis">Written on 2016-07-29 by <a href="#">Donny Beals</a></h6>
