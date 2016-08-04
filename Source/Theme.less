@@ -65,16 +65,15 @@ body {
 	}
 }
 
+.primary-accent { border-top-color: darken(@primaryColor, @colorOffset1); .three-d(@primaryColor); }	
+.secondary-accent { border-top-color: darken(@secondaryColor, @colorOffset1); .three-d(@secondaryColor); }
+.success-accent { border-top-color: darken(@successColor, @colorOffset1); .three-d(@successColor); }	
+.warning-accent { border-top-color: darken(@warningColor, @colorOffset1); .three-d(@warningColor); }
+.error-accent { border-top-color: darken(@errorColor, @colorOffset1); .three-d(@errorColor); }
+
 .card {
 	background-color: @cardBackColor;
-	border-color: @borderColor;
 	color: @cardTextColor;
-
-	&.primary { border-top-color: darken(@primaryColor, @colorOffset1); .three-d(@primaryColor); }	
-	&.secondary { border-top-color: darken(@secondaryColor, @colorOffset1); .three-d(@secondaryColor); }
-	&.success { border-top-color: darken(@successColor, @colorOffset1); .three-d(@successColor); }	
-	&.warning { border-top-color: darken(@warningColor, @colorOffset1); .three-d(@warningColor); }
-	&.error { border-top-color: darken(@errorColor, @colorOffset1); .three-d(@errorColor); }
 
 	.three-d(@borderColor);
 

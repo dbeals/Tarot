@@ -3,8 +3,8 @@
 
 .card {
 	form {
-		input:not([type=button]), select {
-			padding: unit(@basePadding / 4, rem);
+		input:not([type=checkbox]), button, select {
+			padding: unit(@basePadding / 2, rem) @basePadding;
 			margin-bottom: @baseMargin;
 			width: 100%;
 		}
@@ -16,71 +16,12 @@
 				line-height: 1.1rem;
 			}
 
-			input, select {
+			input, button, select {
 				margin-bottom: 0;
 			}
 		}
-
-		input[type=checkbox] {
-			width: initial;
-		}
-
-		.flipcheck {
-			position: absolute;
-			margin-left: -9999px;
-			visibility: hidden;
-		}
-
-		.flipcheck + label {
-			margin-bottom: @baseMargin;
-			
-			display: block;
-			position: relative;
-			cursor: pointer;
-			outline: none;
-			text-align: center;
-			width: 200px;
-			height: @thickPadding;
-			line-height: @thickPadding;
-			border-radius: .25rem;
-
-			font-size: 0;
-
-			&:before, &:after {
-				display: block;
-				position: absolute;
-				top: 0;
-				right: 0;
-				bottom: 0;
-				left: 0;
-				transition: transform 0.5s;
-				backface-visibility: hidden;
-				font-size: initial;
-			}
-
-			&:before {
-				content: attr(data-unchecked);
-			}
-
-			&:after {
-				content: attr(data-checked);
-				transform: rotateY(180deg);
-			}
-		}
-
-		.flipcheck:checked + label {
-				&:before {
-					transform: rotateY(180deg);
-				}
-
-				&:after {
-					transform: rotateY(0);
-				}
-		}
 		
 		button, input[type=button] {
-			padding: unit(@basePadding / 2, rem) @basePadding;
-			margin-bottom: 0;
 			border-radius: .25rem;
 			border-width: 1px;
 		}
