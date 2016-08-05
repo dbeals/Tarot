@@ -65,17 +65,15 @@ body {
 	}
 }
 
-.primary-accent { border-top-color: darken(@primaryColor, @colorOffset1); .three-d(@primaryColor); }	
-.secondary-accent { border-top-color: darken(@secondaryColor, @colorOffset1); .three-d(@secondaryColor); }
-.success-accent { border-top-color: darken(@successColor, @colorOffset1); .three-d(@successColor); }	
-.warning-accent { border-top-color: darken(@warningColor, @colorOffset1); .three-d(@warningColor); }
-.error-accent { border-top-color: darken(@errorColor, @colorOffset1); .three-d(@errorColor); }
+.primary-accent { border-top-color: darken(@primaryColor, @colorOffset1); }
+.secondary-accent { border-top-color: darken(@secondaryColor, @colorOffset1); }
+.success-accent { border-top-color: darken(@successColor, @colorOffset1); }
+.warning-accent { border-top-color: darken(@warningColor, @colorOffset1); }
+.error-accent { border-top-color: darken(@errorColor, @colorOffset1); }
 
 .card {
 	background-color: @cardBackColor;
 	color: @cardTextColor;
-
-	.three-d(@borderColor);
 
 	.back-hover(@color, @selector) {
 		&.@{selector}-back.hover li:not(.header):hover { background-color: lighten(@color, @colorOffset1); }
@@ -88,9 +86,8 @@ body {
 	.back-hover(@warningColor, warning);
 	.back-hover(@errorColor, error);
 
-	.block {
-		background-color: darken(@cardBackColor, 5%);
-	}
+
+	.block { background-color: darken(@cardBackColor, 5%); }
 	
 	form {
 		input:not([type=button]), select {

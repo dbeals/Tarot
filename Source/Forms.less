@@ -5,8 +5,11 @@
 	form {
 		input:not([type=checkbox]), button, select {
 			padding: unit(@basePadding / 2, rem) @basePadding;
-			margin-bottom: @baseMargin;
 			width: 100%;
+			margin-bottom: @baseMargin;
+
+			&.thin-padding { padding: unit(@thinPadding / 2, rem) @thinPadding; }
+			&.thick-padding { padding: unit(@thickPadding / 2, rem) @thickPadding; }
 		}
 
 		.form-group {
@@ -14,6 +17,11 @@
 				display: block;
 				font-weight: bold;
 				line-height: 1.1rem;
+			}
+
+			input[type=checkbox] + label {
+				display: inline-block;
+				margin-left: 5px;
 			}
 
 			input, button, select {
@@ -24,6 +32,13 @@
 		button, input[type=button] {
 			border-radius: .25rem;
 			border-width: 1px;
+			border-style: solid;
+		}
+
+		.inline {
+			input:not([type=checkbox]), button, select {
+				margin-bottom: 0;
+			}
 		}
 	}
 }
