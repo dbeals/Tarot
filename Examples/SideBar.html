@@ -1,0 +1,83 @@
+<!doctype html>
+
+<html>
+	<head>
+		<!-- Standard tags -->
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Tarot Admin Example</title>
+		
+		<!-- Required stylesheet to use Tarot's grid. -->
+		<link rel="stylesheet" type="text/css" href="../Distribution/Grid.css" />
+
+		<!-- Required stylesheet to use Tarot's main elements. -->
+		<link rel="stylesheet" type="text/css" href="../Distribution/Framework.css" />
+
+		<!-- Required stylesheet to use Tarot's forms. -->
+		<link rel="stylesheet" type="text/css" href="../Distribution/Forms.css" />
+
+		<!-- Required stylesheet to use Tarot's theme. -->
+		<link rel="stylesheet" type="text/css" href="../Distribution/Theme.css" />
+
+		<!-- Required stylesheet to use Tarot's Side Bar plugin. -->
+		<link rel="stylesheet" type="text/css" href="../Distribution/Plugins/SideBar.css" />
+
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+	</head>
+
+	<body>
+		<div>
+		<!--two-quarters-width and one-quarter-width-offset are both part of the Tarot built in Grid. -->
+			<div class="side-bar pull-left">
+				<div class="card hover profile">
+					<img src="Content/generic-avatar.png" />
+					<div class="header">FirstName LastName</div>
+					<div class="header">Author</div>
+				</div>
+				<div class="card">
+					<form>
+						<ul class="list inline">
+							<li class="inline-list-item" style="flex-grow: 1;"><input type="search" name="site-search-input" placeholder="Search..." /></li>
+							<li class="inline-list-item"><button name="site-search" value="Search" class="primary-back primary-border"><i class="fa fa-search" aria-hidden="true"></i></button></li>
+						</ul>
+					</form>
+				</div>
+				<div class="card hover">
+					<h5 class="title"><i class="fa fa-user" aria-hidden="true"></i> Content</h5>
+					<ul class="list">
+						<li class="list-item"><a href="#">Dashboard</a></li>
+						<li class="list-item"><a href="#">Tasks</a></li>
+						<li class="list-item"><a href="#">Projects</a></li>
+						<li class="list-item"><a href="#">Contacts</a></li>
+						<li class="list-item"><a href="#">Organizations</a></li>
+						<li class="list-item"><a href="#">Reports</a></li>
+					</ul>
+				</div>
+				<div class="card hover">
+					<h5 class="title"><i class="fa fa-cog" aria-hidden="true"></i> Admin</h5>
+					<ul class="list">
+						<li class="list-item"><a href="#">Settings</a></li>
+						<li class="list-item"><a href="#">Edit Profile</a></li>
+						<li class="list-item"><a href="#">Log Out</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="side-bar-offset-left">
+				<div class="square no-accent margin-none">
+					<h3 class="title">Admin Dashboard</h3>
+					<hr class="margin-all">
+					<p class="pad-horizontal">Tarot is a lightweight, mobile-first, card-based boilerplate framework written using LESS. We've split our design into 3 different principals: cards, modifiers, plugins.</p>
+					<h5 class="header">Cards</h5>
+					<p class="pad-horizontal">The core elements in Tarot are designed around card: content, navigation bars, etc. The other elements like lists and forms, are designed around being placed in a card. This helps keep our elements focused and easily managed while giving a sleek design.</p>
+					
+					<h5 class="header">Modifiers</h5>
+					<p class="pad-horizontal">Almost all of the styling is broken down into different components that can be applied separately to different elements. This way you can change the background of any element to the primary color just by adding the class "primary-back" or change the border color using "primary-border". While this does lead to some bloat, the framework itself is still very lightweight (about 20kb as of writing this.)</p>
+					
+					<h5 class="header">Plugins</h5>
+					<p class="pad-horizontal">The framework itself contains the basic components to allow you to handle simple prototyping. There is no navigation or JavaScript usage in the core - all of this will be included via plugins. So, while you can't just tag something "nav-bar" to get all the styling applied, you can easily make something using the modifiers available, the same way that this example page does. For something more advanced and full-featured, we'll be adding a side-bar plugin.</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
