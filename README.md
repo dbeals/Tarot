@@ -1,10 +1,10 @@
 # Tarot
 
-Tarot is a light-weight, mobile-first, card-based LESS boilerplate framework.
+Tarot is a light-weight, mobile-first, card-based SASS boilerplate framework.
 
 # Current Status
 
-Tarot is currently in Alpha Status 0.1. This means that variables and syntax are subject to change and that there is very little documentation.
+Tarot is currently in Alpha Status 0.2. This means that variables and syntax are subject to change and that there is very little documentation.
 
 # To-Do
 
@@ -29,15 +29,15 @@ These are just a few notes about contributing.
 - Keep selector specificity as low as possible.
 - Do not use ID selectors - all styles should be designed to be applied to any element.
 - Use specific styles; for example, use border[-side]-width instead of border: none as border: none will mess with subsequent styles.
-- Make sure to compile the LESS files down to CSS.
-	- As a side-note, make sure to compile all other files after changes to GlobalVariables.less. Most auto-compile extensions I've used will not detect the change and force the other files to compile.
-- LESS files go in the Source folder, CSS files go in the Distribution folder.
-- All LESS files should import GlobalVariables.less.
-- Only variables and mixins (must always have parenthesis) are allowed in GlobalVariables.less. This way the contents of GlobalVariables.less does not affect the file that is importing it.
-- Colors should be avoided at all cost - these will be set in the Theme.less.
-- If you need to use padding/margins use the predefined variables (see GlobalVariables.less.)
-- If you need to use colors, use the predefined variables (see top of Theme.less.)
-- If a modifier is theme only (defined in Theme.less), then ensure you note that in the readme (see Cards > hover.)
+- Make sure to compile the SASS files down to CSS.
+	- As a side-note, make sure to compile all other files after changes to GlobalVariables.scss. Most auto-compile extensions I've used will not detect the change and force the other files to compile.
+- SASS files go in the Source folder, CSS files go in the Distribution folder.
+- All SASS files should import GlobalVariables.scss.
+- Only variables and mixins (must always have parenthesis) are allowed in GlobalVariables.scss. This way the contents of GlobalVariables.scss does not affect the file that is importing it.
+- Colors should be avoided at all cost - these will be set in the Theme.scss.
+- If you need to use padding/margins use the predefined variables (see GlobalVariables.scss.)
+- If you need to use colors, use the predefined variables (see top of ThemeVariables.scss.)
+- If a modifier is theme only (defined in Theme.scss), then ensure you note that in the readme (see Cards > hover.)
 
 # Design
 
