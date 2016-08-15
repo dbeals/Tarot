@@ -4,11 +4,11 @@ Tarot is a light-weight, mobile-first, card-based SASS boilerplate framework.
 
 # Current Status
 
-Tarot is currently in Alpha Status 0.2. This means that variables and syntax are subject to change and that there is very little documentation.
+Tarot is currently in Alpha Status 0.3. This means that variables and syntax are subject(but unlikely) to change and that there is very little documentation.
 
 # To-Do
 
-- Add plugins for sidebar
+- ~~Add plugins for sidebar~~
 - Add more colors for initial theme
 - Add different button colors
 - Add different button sizes
@@ -18,26 +18,12 @@ Tarot is currently in Alpha Status 0.2. This means that variables and syntax are
 - Add swiping left and right on cards
 - Add swiping up and down on cards
 - Add turning cards
+- ~~Add flipcheck styles~~
+- (When Tarot hits version 0.5) Rails gem
 
 # Contributors
 
 <a href="http://github.com/dbeals/">Donald Beals</a> and <a href="http://github.com/mmccullar/">Matt McCullar</a>.
-
-# Contributing
-
-These are just a few notes about contributing.
-- Keep selector specificity as low as possible.
-- Do not use ID selectors - all styles should be designed to be applied to any element.
-- Use specific styles; for example, use border[-side]-width instead of border: none as border: none will mess with subsequent styles.
-- Make sure to compile the SASS files down to CSS.
-	- As a side-note, make sure to compile all other files after changes to GlobalVariables.scss. Most auto-compile extensions I've used will not detect the change and force the other files to compile.
-- SASS files go in the Source folder, CSS files go in the Distribution folder.
-- All SASS files should import GlobalVariables.scss.
-- Only variables and mixins (must always have parenthesis) are allowed in GlobalVariables.scss. This way the contents of GlobalVariables.scss does not affect the file that is importing it.
-- Colors should be avoided at all cost - these will be set in the Theme.scss.
-- If you need to use padding/margins use the predefined variables (see GlobalVariables.scss.)
-- If you need to use colors, use the predefined variables (see top of ThemeVariables.scss.)
-- If a modifier is theme only (defined in Theme.scss), then ensure you note that in the readme (see Cards > hover.)
 
 # Design
 
@@ -129,7 +115,32 @@ To simplify design, we have included quarters and thirds:
 
 Finally, append -offset to the end of any of these to push the element to the right.
 
+#Icons
+Some of our css parts do require you to use icons, but only in obvious places. If you want to use icons, we recommend Font Awesome. We include Font Awesome easily with this simple import in Framework.css:
+
+```javascript
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css);
+```
+
+If you would like to use different/custom fonts, simply replace this for your own preferred style.
+
 # Themes
 If you just want to adjust theme colors, assign the new values in CustomThemeStyles.less; these values are import after the default values, but before the styles.
 
 If you want to add/adjust built-in theme styles, do so in CustomThemeStyles.less. These are imported after everything else.
+
+# Contributing
+
+These are just a few notes about contributing.
+- Keep selector specificity as low as possible.
+- Do not use ID selectors - all styles should be designed to be applied to any element.
+- Use specific styles; for example, use border[-side]-width instead of border: none as border: none will mess with subsequent styles.
+- Make sure to compile the SASS files down to CSS.
+	- As a side-note, make sure to compile all other files after changes to GlobalVariables.scss. Most auto-compile extensions I've used will not detect the change and force the other files to compile.
+- SASS files go in the Source folder, CSS files go in the Distribution folder.
+- All SASS files should import GlobalVariables.scss.
+- Only variables and mixins (must always have parenthesis) are allowed in GlobalVariables.scss. This way the contents of GlobalVariables.scss does not affect the file that is importing it.
+- Colors should be avoided at all cost - these will be set in the Theme.scss.
+- If you need to use padding/margins use the predefined variables (see GlobalVariables.scss.)
+- If you need to use colors, use the predefined variables (see top of ThemeVariables.scss.)
+- If a modifier is theme only (defined in Theme.scss), then ensure you note that in the readme (see Cards > hover.)
