@@ -1,1 +1,84 @@
-p.thin-margin{margin-bottom:.5rem}p.thick-margin{margin-bottom:2rem}p.thin-margin{margin-bottom:.5rem}p.thick-margin{margin-bottom:2rem}.pad-left.pad-left.thin-padding{padding-left:.5rem}.pad-left.pad-left.thick-padding{padding-left:2rem}.pad-top.pad-top.thin-padding{padding-top:.5rem}.pad-top.pad-top.thick-padding{padding-top:2rem}.pad-right.pad-right.thin-padding{padding-right:.5rem}.pad-right.pad-right.thick-padding{padding-right:2rem}.pad-bottom.pad-bottom.thin-padding{padding-bottom:.5rem}.pad-bottom.pad-bottom.thick-padding{padding-bottom:2rem}.pad-horizontal.pad-horizontal.thin-padding{padding-left:.5rem}.pad-horizontal.pad-horizontal.thick-padding{padding-left:2rem}.pad-horizontal.pad-horizontal.thin-padding{padding-right:.5rem}.pad-horizontal.pad-horizontal.thick-padding{padding-right:2rem}.pad-horizontal.pad-horizontal.thin-padding{padding-left:.5rem;padding-right:.5rem}.pad-horizontal.pad-horizontal.thick-padding{padding-left:2rem;padding-right:2rem}.pad-vertical.pad-vertical.thin-padding{padding-top:.5rem}.pad-vertical.pad-vertical.thick-padding{padding-top:2rem}.pad-vertical.pad-vertical.thin-padding{padding-bottom:.5rem}.pad-vertical.pad-vertical.thick-padding{padding-bottom:2rem}.pad-vertical.pad-vertical.thin-padding{padding-top:.5rem;padding-bottom:.5rem}.pad-vertical.pad-vertical.thick-padding{padding-top:2rem;padding-bottom:2rem}.pad-all.pad-all.thin-padding{padding:.5rem}.pad-all.pad-all.thick-padding{padding:2rem}.margin-left.thin-margin{margin-left:.5rem}.margin-left.thick-margin{margin-left:2rem}.margin-top.thin-margin{margin-top:.5rem}.margin-top.thick-margin{margin-top:2rem}.margin-right.thin-margin{margin-right:.5rem}.margin-right.thick-margin{margin-right:2rem}.margin-bottom.thin-margin{margin-bottom:.5rem}.margin-bottom.thick-margin{margin-bottom:2rem}.margin-horizontal.thin-margin{margin-left:.5rem}.margin-horizontal.thick-margin{margin-left:2rem}.margin-horizontal.thin-margin{margin-left:.5rem}.margin-horizontal.thick-margin{margin-left:2rem}.margin-horizontal.thin-margin{margin-right:.5rem}.margin-horizontal.thick-margin{margin-right:2rem}.margin-horizontal.thin-margin{margin-right:.5rem}.margin-horizontal.thick-margin{margin-right:2rem}.margin-horizontal.thin-margin{margin-left:.5rem;margin-right:.5rem}.margin-horizontal.thick-margin{margin-left:2rem;margin-right:2rem}.margin-vertical.thin-margin{margin-top:.5rem}.margin-vertical.thick-margin{margin-top:2rem}.margin-vertical.thin-margin{margin-top:.5rem}.margin-vertical.thick-margin{margin-top:2rem}.margin-vertical.thin-margin{margin-bottom:.5rem}.margin-vertical.thick-margin{margin-bottom:2rem}.margin-vertical.thin-margin{margin-bottom:.5rem}.margin-vertical.thick-margin{margin-bottom:2rem}.margin-vertical.thin-margin{margin-top:.5rem;margin-bottom:.5rem}.margin-vertical.thick-margin{margin-top:2rem;margin-bottom:2rem}.margin-all.thin-margin{margin:.5rem}.margin-all.thick-margin{margin:2rem}.card form button.primary-back:hover,.card form input[type=button].primary-back:hover,.card form .flipcheck+label.primary-back:hover{background-color:#4acada}.card form button.primary-border:hover,.card form input[type=button].primary-border:hover,.card form .flipcheck+label.primary-border:hover{border-color:#4acada}.card form button.primary-back:active,.card form input[type=button].primary-back:active,.card form .flipcheck+label.primary-back:active{background-color:#1d818d}.card form button.primary-border:active,.card form input[type=button].primary-border:active,.card form .flipcheck+label.primary-border:active{border-color:#1d818d}.card form button.secondary-back:hover,.card form input[type=button].secondary-back:hover,.card form .flipcheck+label.secondary-back:hover{background-color:#deab7d}.card form button.secondary-border:hover,.card form input[type=button].secondary-border:hover,.card form .flipcheck+label.secondary-border:hover{border-color:#deab7d}.card form button.secondary-back:active,.card form input[type=button].secondary-back:active,.card form .flipcheck+label.secondary-back:active{background-color:#b46c2d}.card form button.secondary-border:active,.card form input[type=button].secondary-border:active,.card form .flipcheck+label.secondary-border:active{border-color:#b46c2d}.card form button.success-back:hover,.card form input[type=button].success-back:hover,.card form .flipcheck+label.success-back:hover{background-color:#c5f6c5}.card form button.success-border:hover,.card form input[type=button].success-border:hover,.card form .flipcheck+label.success-border:hover{border-color:#c5f6c5}.card form button.success-back:active,.card form input[type=button].success-back:active,.card form .flipcheck+label.success-back:active{background-color:#5be65b}.card form button.success-border:active,.card form input[type=button].success-border:active,.card form .flipcheck+label.success-border:active{border-color:#5be65b}.card form button.warning-back:hover,.card form input[type=button].warning-back:hover,.card form .flipcheck+label.warning-back:hover{background-color:#ffff3d}.card form button.warning-border:hover,.card form input[type=button].warning-border:hover,.card form .flipcheck+label.warning-border:hover{border-color:#ffff3d}.card form button.warning-back:active,.card form input[type=button].warning-back:active,.card form .flipcheck+label.warning-back:active{background-color:#c2c200}.card form button.warning-border:active,.card form input[type=button].warning-border:active,.card form .flipcheck+label.warning-border:active{border-color:#c2c200}.card form button.error-back:hover,.card form input[type=button].error-back:hover,.card form .flipcheck+label.error-back:hover{background-color:#ffa3a3}.card form button.error-border:hover,.card form input[type=button].error-border:hover,.card form .flipcheck+label.error-border:hover{border-color:#ffa3a3}.card form button.error-back:active,.card form input[type=button].error-back:active,.card form .flipcheck+label.error-back:active{background-color:#ff2929}.card form button.error-border:active,.card form input[type=button].error-border:active,.card form .flipcheck+label.error-border:active{border-color:#ff2929}.primary-text{color:#fff}.primary-back{background-color:#27afc0;color:#fff}.primary-back.dark-back{background-color:#229aa9}.primary-back.darker-back{background-color:#1e8592}.primary-back.darkest-back{background-color:#19707b}.primary-back.light-back{background-color:#2ec2d5}.primary-back.lighter-back{background-color:#45c9d9}.primary-back.lightest-back{background-color:#5cd0de}.primary-border{border-color:#1d818d}.primary-border.dark-border{border-color:#1e8592}.primary-border.darker-border{border-color:#19707b}.primary-border.darkest-border{border-color:#145b64}.primary-border.light-border{border-color:#45c9d9}.primary-border.lighter-border{border-color:#5cd0de}.primary-border.lightest-border{border-color:#73d6e3}.primary-back a{color:#27afc0}.secondary-text{color:black}.secondary-back{background-color:#d28b4c;color:black}.secondary-back.dark-back{background-color:#c97933}.secondary-back.darker-back{background-color:#ae692c}.secondary-back.darkest-back{background-color:#925825}.secondary-back.light-back{background-color:#d99d67}.secondary-back.lighter-back{background-color:#e0af83}.secondary-back.lightest-back{background-color:#e7c09e}.secondary-border{border-color:#b46c2d}.secondary-border.dark-border{border-color:#ae692c}.secondary-border.darker-border{border-color:#925825}.secondary-border.darkest-border{border-color:#77481e}.secondary-border.light-border{border-color:#e0af83}.secondary-border.lighter-border{border-color:#e7c09e}.secondary-border.lightest-border{border-color:#eed2ba}.secondary-back a{color:gray}.error-text{color:black}.error-back{background-color:#ff6666;color:black}.error-back.dark-back{background-color:#ff3b3b}.error-back.darker-back{background-color:#ff1010}.error-back.darkest-back{background-color:#e40000}.error-back.light-back{background-color:#ff9191}.error-back.lighter-back{background-color:#ffbcbc}.error-back.lightest-back{background-color:#ffe7e7}.error-border{border-color:#ff2929}.error-border.dark-border{border-color:#ff1010}.error-border.darker-border{border-color:#e40000}.error-border.darkest-border{border-color:#ba0000}.error-border.light-border{border-color:#ffbcbc}.error-border.lighter-border{border-color:#ffe7e7}.error-border.lightest-border{border-color:#fff}.error-back a{color:white}.warning-text{color:black}.warning-back{background-color:yellow;color:black}.warning-back.dark-back{background-color:#e0e000}.warning-back.darker-back{background-color:#c2c200}.warning-back.darkest-back{background-color:#a3a300}.warning-back.light-back{background-color:#ffff1f}.warning-back.lighter-back{background-color:#ffff3d}.warning-back.lightest-back{background-color:#ffff5c}.warning-border{border-color:#c2c200}.warning-border.dark-border{border-color:#c2c200}.warning-border.darker-border{border-color:#a3a300}.warning-border.darkest-border{border-color:#858500}.warning-border.light-border{border-color:#ffff3d}.warning-border.lighter-border{border-color:#ffff5c}.warning-border.lightest-border{border-color:#ffff7a}.warning-back a{color:red}.success-text{color:black}.success-back{background-color:lightgreen;color:black}.success-back.dark-back{background-color:#68e868}.success-back.darker-back{background-color:#40e240}.success-back.darkest-back{background-color:#20d420}.success-back.light-back{background-color:#b8f4b8}.success-back.lighter-back{background-color:#e0fae0}.success-back.lightest-back{background-color:#fff}.success-border{border-color:#5be65b}.success-border.dark-border{border-color:#40e240}.success-border.darker-border{border-color:#20d420}.success-border.darkest-border{border-color:#1aac1a}.success-border.light-border{border-color:#e0fae0}.success-border.lighter-border{border-color:#fff}.success-border.lightest-border{border-color:#fff}.success-back a{color:darkorange}.side-bar{width:100%}.side-bar.pull-left{position:inherit;border-left-width:inherit;border-top-width:inherit}.side-bar.pull-right{position:inherit;border-right-width:inherit;border-top-width:inherit}.side-bar .card{border-radius:0;border-top-color:#1d818d;border-color:#1d818d;margin:0}.side-bar .card.dark-border{border-color:#1e8592}.side-bar .card.darker-border{border-color:#19707b}.side-bar .card.darkest-border{border-color:#145b64}.side-bar .card.light-border{border-color:#45c9d9}.side-bar .card.lighter-border{border-color:#5cd0de}.side-bar .card.lightest-border{border-color:#73d6e3}.side-bar .card .title{text-align:center}.side-bar .card.profile{padding:1rem;border-radius:0;background-color:#27afc0;color:#fff;text-align:center;border-top-width:1px}.side-bar .card.profile.thin-padding{padding:.5rem}.side-bar .card.profile.thick-padding{padding:2rem}.side-bar .card.profile.dark-back{background-color:#229aa9}.side-bar .card.profile.darker-back{background-color:#1e8592}.side-bar .card.profile.darkest-back{background-color:#19707b}.side-bar .card.profile.light-back{background-color:#2ec2d5}.side-bar .card.profile.lighter-back{background-color:#45c9d9}.side-bar .card.profile.lightest-back{background-color:#5cd0de}.side-bar .card.profile img{max-width:128px;max-height:128px;border-radius:50%}.side-bar .card .list{display:block;width:100%}.side-bar .card .list.inline{display:block}@media (min-width:980px){.side-bar .card .list.inline{display:inline-flex}.side-bar .card .list.inline .list-item{border-bottom-width:0}}.side-bar .card .list .inline-list-item{margin:0;padding:1rem;padding:.5rem}.side-bar .card .list .inline-list-item.thin-padding{padding:.5rem}.side-bar .card .list .inline-list-item.thick-padding{padding:2rem}.side-bar .card .list .list-item{padding:0}.side-bar .card .list .list-item a{padding:1rem;padding:.5rem;display:block;width:100%}.side-bar .card .list .list-item a.thin-padding{padding:.5rem}.side-bar .card .list .list-item a.thick-padding{padding:2rem}@media (min-width:980px){.side-bar{width:24rem}.side-bar.pull-left{position:absolute;left:0;top:0;border-left-width:0;border-top-width:0}.side-bar.pull-right{position:absolute;right:0;top:0;border-right-width:0;border-top-width:0}}@media (min-width:980px){.side-bar-offset-left{margin-left:24rem}}@media (min-width:980px){.side-bar-offset-right{margin-right:24rem}}
+﻿.side-bar {
+  width: 100%; }
+  .side-bar.pull-left {
+    position: inherit;
+    border-left-width: inherit;
+    border-top-width: inherit; }
+  .side-bar.pull-right {
+    position: inherit;
+    border-right-width: inherit;
+    border-top-width: inherit; }
+  .side-bar .card {
+    border-radius: 0;
+    border-top-color: #1d818d;
+    margin: 0;
+    border-color: #27afc0; }
+    .side-bar .card .title {
+      text-align: center; }
+    .side-bar .card.profile {
+      padding: 1rem;
+      border-radius: 0;
+      text-align: center;
+      border-top-width: 1px;
+      background-color: #27afc0; }
+      .side-bar .card.profile.thin-padding {
+        padding: 0.5rem; }
+      .side-bar .card.profile.thick-padding {
+        padding: 2rem; }
+      .side-bar .card.profile img {
+        max-width: 128px;
+        max-height: 128px;
+        border-radius: 50%; }
+    .side-bar .card .list {
+      display: block;
+      width: 100%; }
+      .side-bar .card .list.inline {
+        display: block; }
+        @media (min-width: 980px) {
+          .side-bar .card .list.inline {
+            display: inline-flex; }
+            .side-bar .card .list.inline .list-item {
+              border-bottom-width: 0; } }
+      .side-bar .card .list .inline-list-item {
+        margin: 0;
+        padding: 1rem;
+        padding: 0.5rem; }
+        .side-bar .card .list .inline-list-item.thin-padding {
+          padding: 0.5rem; }
+        .side-bar .card .list .inline-list-item.thick-padding {
+          padding: 2rem; }
+      .side-bar .card .list .list-item {
+        padding: 0; }
+        .side-bar .card .list .list-item a {
+          padding: 1rem;
+          display: block;
+          width: 100%;
+          padding: 0.5rem; }
+          .side-bar .card .list .list-item a.thin-padding {
+            padding: 0.5rem; }
+          .side-bar .card .list .list-item a.thick-padding {
+            padding: 2rem; }
+  @media (min-width: 980px) {
+    .side-bar {
+      width: 24rem; }
+      .side-bar.pull-left {
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-left-width: 0;
+        border-top-width: 0; }
+      .side-bar.pull-right {
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-right-width: 0;
+        border-top-width: 0; } }
+
+@media (min-width: 980px) {
+  .side-bar-offset-left {
+    margin-left: 24rem; } }
+
+@media (min-width: 980px) {
+  .side-bar-offset-right {
+    margin-right: 24rem; } }
+

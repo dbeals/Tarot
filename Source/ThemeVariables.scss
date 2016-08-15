@@ -1,0 +1,39 @@
+﻿@import "GlobalVariables.scss";
+
+$mainColor: #282b35;
+$borderColor: #343845;
+$lightTextColor: silver;
+$mainTextColor: silver;
+
+$linkColor: #27afc0;
+
+$cardBackColor: #1d1f26;
+$cardTextColor: silver;
+
+$primaryColor: #27afc0;
+$primaryTextColor: #fff;
+$primaryLinkColor: #27afc0;
+
+$secondaryColor: #d28b4c;
+$secondaryTextColor: black;
+$secondaryLinkColor: gray;
+
+$successColor: lightgreen;
+$successTextColor: black;
+$successLinkColor: darkorange;
+
+$warningColor: yellow;
+$warningTextColor: black;
+$warningLinkColor: red;
+
+$errorColor: #ff6666;
+$errorTextColor: black;
+$errorLinkColor: white;
+
+@mixin primary-accent { border-top-color: darken($primaryColor, $colorOffset1); }
+@mixin secondary-accent { border-top-color: darken($secondaryColor, $colorOffset1); }
+@mixin success-accent { border-top-color: darken($successColor, $colorOffset1); }
+@mixin warning-accent { border-top-color: darken($warningColor, $colorOffset1); }
+@mixin error-accent { border-top-color: darken($errorColor, $colorOffset1); }
+
+@mixin back-hover($color, $selector) { &.#{$selector}-back.hover li:not(.header):hover { background-color: lighten($color, $colorOffset1); } }

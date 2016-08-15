@@ -1,0 +1,101 @@
+﻿@import "GlobalVariables.scss";
+@import "ThemeVariables.scss";
+@import "CustomThemeVariables.scss";
+
+* {
+	border-color: $borderColor;
+}
+
+a {
+	text-decoration: none;
+	color: $linkColor;
+}
+
+body {
+	background-color: $mainColor;
+	color: $mainTextColor;
+}
+
+.nav-bar {
+	@media (min-width: $mediumBreakpoint) {
+		border-right-color: $borderColor;
+	}
+
+	.card {
+		box-shadow: none !important;
+	}
+}
+
+.top-bar {
+	li {
+		a:hover {
+			background-color: lighten($cardBackColor, $colorOffset1);
+		}
+	}
+}
+
+.primary-accent { @include primary-accent; }
+.secondary-accent { @include secondary-accent; }
+.success-accent { @include success-accent; }
+.warning-accent { @include warning-accent; }
+.error-accent { @include error-accent; }
+
+.card {
+	background-color: $cardBackColor;
+	color: $cardTextColor;
+
+	&.hover li:not(.header):hover { background-color: lighten($cardBackColor, $colorOffset1); }
+	@include back-hover($primaryColor, primary);
+	@include back-hover($secondaryColor, secondary);
+	@include back-hover($successColor, success);
+	@include back-hover($warningColor, warning);
+	@include back-hover($errorColor, error);
+
+	.block { background-color: darken($cardBackColor, 5%); }
+	
+	form {
+		input:not([type=button]), select {
+			background-color: $cardBackColor;
+			color: $cardTextColor;
+			border-left-width: 0;
+			border-top-width: 0;
+			border-right-width: 0;
+			border-bottom-width: 1px;
+		}
+
+		button, input[type=button], .flipcheck + label {
+			@include button-states($primaryColor, primary);
+			@include button-states($secondaryColor, secondary);
+			@include button-states($successColor, success);
+			@include button-states($warningColor, warning);
+			@include button-states($errorColor, error);
+		}
+
+		.flipcheck + label {
+			&:before {
+				background-color: $primaryColor;
+				border-radius: .25rem;
+				color: $primaryTextColor;
+			}
+
+			&:after {
+				background-color: $secondaryColor;
+				border-color: $borderColor;
+				border-radius: .25rem;
+				color: $secondaryTextColor;
+			}
+		}
+	}
+}
+
+.form-group {
+	margin: $baseMargin;
+}
+
+@include color-group($primaryColor, $primaryTextColor, $primaryLinkColor, primary);
+@include color-group($secondaryColor, $secondaryTextColor, $secondaryLinkColor, secondary);
+@include color-group($errorColor, $errorTextColor, $errorLinkColor, error);
+@include color-group($warningColor, $warningTextColor, $warningLinkColor, warning);
+@include color-group($successColor, $successTextColor, $successLinkColor, success);
+
+@import "CustomThemeStyles.scss";

@@ -1,0 +1,97 @@
+﻿@import "../GlobalVariables.scss";
+@import "../ThemeVariables.scss";
+
+.side-bar {
+	width: 100%;
+
+	&.pull-left {
+		position: inherit;
+		border-left-width: inherit;
+		border-top-width: inherit;
+	}
+	
+	&.pull-right {
+		position: inherit;
+		border-right-width: inherit;
+		border-top-width: inherit;
+	}
+
+	.card {
+		@include square;
+		@include primary-accent;
+		@include margin-none;
+		border-color: $primaryColor;
+
+		.title {
+			@include text-center;
+		}
+
+		&.profile {
+			@include pad-all;
+			@include square;
+			@include text-center;
+			border-top-width: 1px;
+			background-color: $primaryColor;
+
+			img {
+				max-width: 128px;
+				max-height: 128px;
+				border-radius: 50%;
+			}
+		}
+
+		.list {
+			@include full-width;
+
+			&.inline {
+				display: block;
+	
+				@media (min-width: $defaultBreakpoint) {
+					display: inline-flex;
+					.list-item {
+						border-bottom-width: 0;
+					}
+				}
+			}
+
+			.inline-list-item {
+				@include margin-none;
+				@include pad-all;
+				padding: $thinPadding;
+			}
+
+			.list-item {
+				@include pad-none;
+
+				a {
+					@include pad-all;
+					@include full-width;
+					padding: $thinPadding;
+				}
+			}
+		}
+	}
+
+	@media (min-width: $defaultBreakpoint) {
+		width: 24rem;
+		
+		&.pull-left {
+			position: absolute;
+			left: 0;
+			top: 0;
+			border-left-width: 0;
+			border-top-width: 0;
+		}
+		
+		&.pull-right {
+			position: absolute;
+			right: 0;
+			top: 0;
+			border-right-width: 0;
+			border-top-width: 0;
+		}
+	}
+}
+
+.side-bar-offset-left { @media (min-width: $defaultBreakpoint) { margin-left: 24rem; } }
+.side-bar-offset-right { @media (min-width: $defaultBreakpoint) { margin-right: 24rem; } }

@@ -1,0 +1,174 @@
+﻿$smallBreakpoint: 480px;
+$mediumBreakpoint: 720px;
+$largeBreakpoint: 980px;
+$extraLargeBreakpoint: 1140px;
+
+$defaultBreakpoint: $largeBreakpoint;
+
+$baseFontSize: 16px;
+$baseFontFamily: sans-serif;
+$headerBaseSize: 1;
+$headerSizeIncrement: 0.25;
+
+$basePadding: 1rem;
+$thinPadding: 0.5rem;
+$thickPadding: 2rem;
+
+$baseMargin: 1rem;
+$thinMargin: 0.5rem;
+$thickMargin: 2rem;
+
+$colorOffset1: 12%;
+$colorOffset2: 24%;
+$colorOffset3: 36%;
+$colorOffset4: 48%;
+
+$sideBarWidth: 240px;
+$roundingRadius: 0.25rem;
+
+// Typography
+@mixin text-left { text-align: left; }
+@mixin text-center { text-align: center; }
+@mixin text-right { text-align: right; }
+@mixin small-text { font-size: 0.75rem; }
+@mixin normal-text { font-size: 1rem; }
+@mixin large-text { font-size: 1.25rem; }
+@mixin extra-large-text { font-size: 1.5rem; }
+@mixin strong { font-weight: bold; }
+@mixin emphasis { font-style: italic; }
+@mixin ellipsis {
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+}
+
+// Paddings
+@mixin pad-none() { padding: 0; }
+@mixin pad-left() { padding-left: $basePadding; &.thin-padding { padding-left: $thinPadding; } &.thick-padding { padding-left: $thickPadding; } }
+@mixin pad-top() { padding-top: $basePadding; &.thin-padding { padding-top: $thinPadding; } &.thick-padding { padding-top: $thickPadding; } }
+@mixin pad-right() { padding-right: $basePadding; &.thin-padding { padding-right: $thinPadding; } &.thick-padding { padding-right: $thickPadding; } }
+@mixin pad-bottom() { padding-bottom: $basePadding; &.thin-padding { padding-bottom: $thinPadding; } &.thick-padding { padding-bottom: $thickPadding; } }
+@mixin pad-horizontal() { @include pad-left; @include pad-right; &.thin-padding { padding-left: $thinPadding; padding-right: $thinPadding; } &.thick-padding { padding-left: $thickPadding; padding-right: $thickPadding; } }
+@mixin pad-vertical() { @include pad-top; @include pad-bottom; &.thin-padding { padding-top: $thinPadding; padding-bottom: $thinPadding; } &.thick-padding { padding-top: $thickPadding; padding-bottom: $thickPadding; } }
+@mixin pad-all() { padding: $basePadding; &.thin-padding { padding: $thinPadding; } &.thick-padding { padding: $thickPadding; } }
+
+// Margins
+@mixin margin-none() { margin: 0; }
+@mixin margin-left() { margin-left: $baseMargin; &.thin-margin { margin-left: $thinMargin; } &.thick-margin { margin-left: $thickMargin; } }
+@mixin margin-top() { margin-top: $baseMargin; &.thin-margin { margin-top: $thinMargin; } &.thick-margin { margin-top: $thickMargin; } }
+@mixin margin-right() { margin-right: $baseMargin; &.thin-margin { margin-right: $thinMargin; } &.thick-margin { margin-right: $thickMargin; } }
+@mixin margin-bottom() { margin-bottom: $baseMargin; &.thin-margin { margin-bottom: $thinMargin; } &.thick-margin { margin-bottom: $thickMargin; } }
+@mixin margin-horizontal() { @include margin-left; @include margin-right; &.thin-margin { margin-left: $thinMargin; margin-right: $thinMargin; } &.thick-margin { margin-left: $thickMargin; margin-right: $thickMargin; } }
+@mixin margin-vertical() { @include margin-top; @include margin-bottom; &.thin-margin { margin-top: $thinMargin; margin-bottom: $thinMargin; } &.thick-margin { margin-top: $thickMargin; margin-bottom: $thickMargin; } }
+@mixin margin-all() { margin: $baseMargin; &.thin-margin { margin: $thinMargin; } &.thick-margin { margin: $thickMargin; } }
+
+// Flipping
+@mixin flip($time, $degs: 180deg, $backfaceVisibility: hidden) {
+	transition: transform $time;
+	transform: rotateY($degs);
+	backface-visibility: $backfaceVisibility;
+}
+
+@mixin no-flip($backfaceVisibility: hidden) { @include flip(.5s, 0deg, $backfaceVisibility); }
+
+// Rounding
+@mixin square { border-radius: 0; }
+@mixin round-top-left() { border-top-left-radius: $roundingRadius; }
+@mixin round-top-right() { border-top-right-radius: $roundingRadius; }
+@mixin round-bottom-left() { border-bottom-left-radius: $roundingRadius; }
+@mixin round-bottom-right() { border-bottom-right-radius: $roundingRadius; }
+@mixin round-top() { @include round-top-left; @include round-top-right; }
+@mixin round-bottom() { @include round-bottom-left(); @include round-bottom-right(); }
+@mixin round-left() { @include round-top-left(); @include round-bottom-left(); }
+@mixin round-right() { @include round-top-right(); @include round-bottom-right(); }
+@mixin round-forward-diagonal() { @include round-bottom-left(); @include round-top-right(); }
+@mixin round-backward-diagonal() { @include round-bottom-right(); @include round-top-left(); }
+@mixin round-all() { @include round-top-left(); @include round-top-right(); @include round-bottom-left(); @include round-bottom-right(); }
+
+// Miscellaneous
+@mixin tag($radius) {
+	border-radius: $radius;
+	line-height: 0.75rem;
+	@include small-text();
+	padding: 0.25rem 0.4rem;
+	white-space: nowrap;
+}
+
+@mixin background($color, $textColor, $selectorPrefix, $prefix: '.') {
+	#{$prefix}#{$selectorPrefix}-back {
+		background-color: $color;
+		color: $textColor;
+		
+		&.dark-back { background-color: darken($color, $colorOffset1); }
+		&.darker-back { background-color: darken($color, $colorOffset2); }
+		&.darkest-back { background-color: darken($color, $colorOffset3); }
+		&.light-back { background-color: lighten($color, $colorOffset1); }
+		&.lighter-back { background-color: lighten($color, $colorOffset2); }
+		&.lightest-back { background-color: lighten($color, $colorOffset3); }
+	}
+}
+
+@mixin border($color, $selectorPrefix, $prefix: '.') {
+	#{$prefix}#{$selectorPrefix}-border {
+		border-color: darken($color, $colorOffset1);
+		
+		&.dark-border { border-color: darken($color, $colorOffset2); }
+		&.darker-border { border-color: darken($color, $colorOffset3); }
+		&.darkest-border { border-color: darken($color, $colorOffset4); }
+		&.light-border { border-color: lighten($color, $colorOffset2); }
+		&.lighter-border { border-color: lighten($color, $colorOffset3); }
+		&.lightest-border { border-color: lighten($color, $colorOffset4); }
+	}
+}
+
+@mixin text-color($color, $selectorPrefix, $prefix: '.') {
+	#{$prefix}#{$selectorPrefix}-text {
+		color: $color;
+		
+		&.dark-text { color: darken($color, $colorOffset1); }
+		&.darker-text { color: darken($color, $colorOffset2); }
+		&.darkest-text { color: darken($color, $colorOffset3); }
+		&.light-text { color: lighten($color, $colorOffset1); }
+		&.lighter-text { color: lighten($color, $colorOffset2); }
+		&.lightest-text { color: lighten($color, $colorOffset3); }
+	}
+}
+
+@mixin color-group($color, $textColor, $linkColor, $selectorPrefix, $prefix: '.') {
+	#{$prefix}#{$selectorPrefix}-text { color: $textColor; }
+	@include background($color, $textColor, $selectorPrefix, $prefix);
+	@include border($color, $selectorPrefix, $prefix);
+
+	#{$prefix}#{$selectorPrefix}-back a { color: $linkColor; }
+}
+
+@mixin outline($color, $textColor, $selectorPrefix, $prefix: '.') {
+	&#{$prefix}#{$selectorPrefix} {
+		background-color: $color;
+		color: $textColor;
+		&.outline {
+			background-color: transparent;
+			border-color: $color;
+			color: $color;
+
+			&:hover {
+				background-color: $color;
+				color: $textColor;
+			}
+		}
+	}
+}
+
+@mixin button-states($color, $colorGroup, $prefix: '.') {
+	&#{$prefix$colorGroup}-back:hover { background-color: lighten($color, $colorOffset1); }
+	&#{$prefix$colorGroup}-border:hover { border-color: lighten($color, $colorOffset1); }
+	&#{$prefix$colorGroup}-back:active { background-color: darken($color, $colorOffset1); }
+	&#{$prefix$colorGroup}-border:active { border-color: darken($color, $colorOffset1); }
+}
+
+@mixin full-width {
+	display: block;
+	width: 100%;
+}
