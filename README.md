@@ -53,9 +53,8 @@ These are modifiers that can be used on any element.
 - **thin-margin, thick-margin**: changes the margin to be half or double, respectively.
 
 # Flipcheck
-![Flipcheck](http://i.makeagif.com/media/8-16-2016/BcfvAE.gif)
-
 - **flip-switch, flip-switch-icon, flip-switch-text**: Respective class names for flip check content.
+![Flipcheck](http://i.makeagif.com/media/8-16-2016/BcfvAE.gif)
 
 # Typography
 
