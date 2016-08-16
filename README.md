@@ -11,19 +11,18 @@ Tarot is currently in Alpha Status 0.3. This means that variables and syntax are
 - ~~Add plugins for sidebar~~
 - Add more colors for initial theme
 - Add different button colors
+- Add 'Alternative' colors and styles
 - Add different button sizes
 - Add more click button effects
-- Add card close effects
-- Add card switching effects
-- Add swiping left and right on cards
-- Add swiping up and down on cards
-- Add turning cards
 - ~~Add flipcheck styles~~
+- Add 'Bigflip' flipcheck
 - (When Tarot hits version 0.5) Rails gem
 
 # Contributors
 
 <a href="http://github.com/dbeals/">Donald Beals</a> and <a href="http://github.com/mmccullar/">Matt McCullar</a>.
+
+We would appreciate any wishlist items or wants from all Tarot users - help us make Tarot better for you. Tell us what you want!
 
 # Design
 
@@ -36,7 +35,7 @@ Second is modifiers - the majority of the classes are designed as modifiers to b
 # Generic Modifiers
 
 These are modifiers that can be used on any element.
-
+![alt text](https://github.com/dbeals/Tarot/tree/master/Examples/Content/tarotcolors.PNG "- Example of our colors:")
 - **[primary/secondary/success/warning/error]**: changes the color of the accent (3px border at the top.)
 - **[primary/secondary/success/warning/error]-back**: changes the color of the background.
 - **[dark/darker/darkest/light/lighter/lightest]-back**: changes the brightness of the background based on the current -back modifier.
@@ -52,6 +51,11 @@ These are modifiers that can be used on any element.
 - **pad-left, pad-top, pad-right, pad-bottom, pad-all, pad-horizontal, pad-vertical**: sets the respective padding to @basePadding.
 - **thin-padding, thick-padding**: changes the padding to be half or double, respectively.
 - **thin-margin, thick-margin**: changes the margin to be half or double, respectively.
+
+# Flipcheck
+![Flipcheck](http://i.makeagif.com/media/8-16-2016/BcfvAE.gif)
+
+- **flip-switch, flip-switch-icon, flip-switch-text**: Respective class names for flip check content.
 
 # Typography
 
@@ -128,6 +132,11 @@ If you would like to use different/custom fonts, simply replace this for your ow
 If you just want to adjust theme colors, assign the new values in CustomThemeStyles.less; these values are import after the default values, but before the styles.
 
 If you want to add/adjust built-in theme styles, do so in CustomThemeStyles.less. These are imported after everything else.
+
+# Examples
+
+- Examples of Tarot can be found in https://github.com/dbeals/Tarot/tree/master/Examples
+- Screen captures of the examples can be found at https://github.com/dbeals/Tarot/tree/master/Examples/Content
 
 # Contributing
 
