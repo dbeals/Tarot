@@ -35,7 +35,8 @@ Second is modifiers - the majority of the classes are designed as modifiers to b
 # Generic Modifiers
 
 These are modifiers that can be used on any element.
-![alt text](https://github.com/dbeals/Tarot/tree/master/Examples/Content/tarotcolors.PNG "- Example of our colors:")
+
+![Example colors](https://github.com/dbeals/Tarot/blob/master/Examples/Content/tarotcolors.PNG)
 - **[primary/secondary/success/warning/error]**: changes the color of the accent (3px border at the top.)
 - **[primary/secondary/success/warning/error]-back**: changes the color of the background.
 - **[dark/darker/darkest/light/lighter/lightest]-back**: changes the brightness of the background based on the current -back modifier.
@@ -53,6 +54,7 @@ These are modifiers that can be used on any element.
 - **thin-margin, thick-margin**: changes the margin to be half or double, respectively.
 
 # Flipcheck
+<br>
 - **flip-switch, flip-switch-icon, flip-switch-text**: Respective class names for flip check content.
 ![Flipcheck](http://i.makeagif.com/media/8-16-2016/BcfvAE.gif)
 
