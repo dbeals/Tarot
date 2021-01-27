@@ -1,0 +1,96 @@
+
+<!doctype html>
+
+<html>
+	<head>
+		<!-- Standard tags -->
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Tarot Blog Example</title>
+		
+		<!-- Required stylesheet to use Tarot's grid. -->
+		<link rel="stylesheet" type="text/css" href="../Distribution/Grid.css" />
+
+		<!-- Required stylesheet to use Tarot's main elements. -->
+		<link rel="stylesheet" type="text/css" href="../Distribution/Framework.css" />
+
+        
+		<!-- Required stylesheet to use Tarot's forms. -->
+		<link rel="stylesheet" type="text/css" href="../Distribution/Forms.css" />
+
+		<!-- Required stylesheet to use Tarot's theme. -->
+		<link rel="stylesheet" type="text/css" href="../Distribution/Theme.css" />
+	</head>
+
+	<body>
+		<div>
+		<!--two-quarters-width and one-quarter-width-offset are both part of the Tarot built in Grid. -->
+			<div class="three-quarters-width">
+				<div class="card hover no-accent">
+					<ul class="list inline">
+						<li class="inline-list-item header">Tarot Blog</li>
+						<li class="inline-list-item"><a href="#">Home</a></li>
+						<li class="inline-list-item"><a href="#">Contact</a></li>
+						<li class="inline-list-item"><a href="#">About</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="one-quarter-width pull-right">
+				<div class="card no-accent">
+					<div class="primary-back text-center pad-all round-top">
+						<img src="Content/generic-avatar.png" style="max-width: 128px; max-height: 128px; border-radius: 50%;" />
+						<div class="header">Donny Beals</div>
+						<div class="header">Author</div>
+					</div>
+					
+					<ul class="list">
+						<li class="list-item"><a href="mailto:dbeals@bealssoftware.com">Send Email</a></li>
+						<li class="list-item"><a href="http://www.twitter.com/Programmer16">Find On Twitter</a></li>
+					</ul>
+				</div>
+				<div class="card primary-accent">
+					<form>
+						<h6 class="title text-center">Search</h6>
+						<div class="form-group"><input type="text" name="search-entry" placeholder="Search site..." /></div>
+						<div class="form-group"><input type="button" name="search-submit" value="Search" /></div>
+					</form>
+				</div>
+				<div class="card primary-accent">
+					<h6 class="title text-center">Blog Posts</h6>
+					<ul class="list">
+						<li class="list-item"><a class="ellipsis" href="#post-1">Tarot Framework - Blog Post #1</a>&nbsp;<div class="pill primary-back">3 Comments</div></li>
+						<li class="list-item"><a class="ellipsis" href="#post-2">*Insert Clickbait Title Here*</a>&nbsp;<div class="pill primary-back">9000 Comments</div></li>
+					</ul>
+				</div>
+			</div>
+			<div class="three-quarters-width">
+				<div id="post-1" class="card hover primary-accent">
+					<h3 class="title text-left margin-none margin-left margin-top margin-right">Tarot Framework - Blog Post #1</h3>
+					<h6 class="title text-left margin-none margin-left margin-bottom margin-right emphasis">Written on 2016-07-30 by <a href="#">Donny Beals</a></h6>
+					<p class="pad-horizontal">This is a simple blog-post style example. The bar with the author information and links to posts will appear between the top nav-bar and these blog posts on any resolution smaller than the default breakpoint. Above the default breakpoint it will appear to the right hand side.</p>
+					<p class="pad-horizontal">This is just some filler text to make the blog post appear longer than it really is. Is it working?</p>
+					<div class="block round-bottom pad-none">
+						<ul class="list inline">
+							<li class="inline-list-item">Edit Post</li>
+							<li class="inline-list-item">Delete Post</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div id="post-2" class="card hover primary-accent">
+					<h3 class="title text-left margin-none margin-left margin-top margin-right">*Insert Clickbait Title Here*</h3>
+					<h6 class="title text-left margin-none margin-left margin-bottom margin-right emphasis">Written on 2016-07-29 by <a href="#">Donny Beals</a></h6>
+					<p class="pad-horizontal">This is a simple blog-post style example. The bar with the author information and links to posts will appear between the top nav-bar and these blog posts on any resolution smaller than the default breakpoint. Above the default breakpoint it will appear to the right hand side.</p>
+					<p class="pad-horizontal">This is just some filler text to make the blog post appear longer than it really is. Is it working?</p>
+					<div class="block round-bottom pad-none">
+						<ul class="list inline">
+							<li class="inline-list-item">Edit Post</li>
+							<li class="inline-list-item">Delete Post</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+    </body>
+</html>
